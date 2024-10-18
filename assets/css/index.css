@@ -12,6 +12,7 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -27,20 +28,19 @@ main {
   background-size: 100dvh 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  /*  padding: 8px 8px 0 8px; */
+  padding: 0px 16px;
   overflow-x: hidden;
   overflow-y: clip;
 }
 
 .stories {
   position: relative;
-  max-width: 120rem;
-  width: 100%;
-  border: 1px solid green;
+  width: 120rem;
 }
 
 .hero-section {
-  height: 44.438rem;
+  width: 100%;
+  height: 29.438rem;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -67,11 +67,32 @@ main {
   width: 4.696rem;
   height: 1.688rem;
   align-self: flex-end;
-  margin-right: 25px;
+  margin-right: 5rem;
   margin-bottom: 0;
   cursor: pointer;
   transition: none;
   pointer-events: auto !important;
+  z-index: 2;
+}
+
+.razdelitel-hero-container {
+  position: absolute;
+  transform: scaleX(-1);
+  width: 36.5rem;
+  height: 29.75rem;
+  margin-right: -10rem;
+  right: -2rem;
+  /* left: 94rem; */
+  top: -4rem;
+}
+
+.razdelitel-hero-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../Klaksa1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .german-section,
@@ -90,7 +111,6 @@ main {
 }
 
 .wolves-section {
-  border: 1px solid purple;
   margin-bottom: 9.375rem;
 }
 
@@ -127,7 +147,6 @@ main {
   grid-template-rows: 1fr;
   max-width: 87.188rem;
   width: 100%;
-  border: 1px solid red;
 }
 
 h1 {
@@ -149,40 +168,33 @@ p {
 }
 
 .ger-text {
-  max-width: 33.206rem;
-  width: 100%;
+  width: 33.206rem;
 }
 
 .wolf-text {
-  max-width: 30.587rem;
-  width: 100%;
+  width: 30.587rem;
 }
 
 .peat-text {
-  max-width: 29.938rem;
-  width: 100%;
+  width: 29.938rem;
 }
 
 .groom-text {
-  max-width: 31.484rem;
-  width: 100%;
+  width: 31.484rem;
   margin-top: 1.563rem;
 }
 
 .kremlin-text {
-  max-width: 29.899rem;
-  width: 100%;
+  width: 29.899rem;
   margin-top: 9.75rem;
 }
 
 .vegbase-text {
-  max-width: 33.556rem;
-  width: 100%;
+  width: 33.556rem;
 }
 
 .brillgn-text {
-  max-width: 32.423rem;
-  width: 100%;
+  width: 32.423rem;
   margin-top: 2.375rem;
 }
 
@@ -251,29 +263,25 @@ p {
 }
 
 .ger-img {
-  position: relative;
-  top: 2.063rem;
+  margin-top: 2.063rem;
   width: 53.188rem;
   height: 31.625rem;
 }
 
 .wolf-img {
-  position: relative;
-  right: 4.938rem;
+  margin-left: -4.938rem;
   width: 42.468rem;
   height: 37.756rem;
 }
 
 .peat-img {
-  position: relative;
-  top: 0.875rem;
+  margin-top: 0.875rem;
   width: 55.081rem;
   height: 32.678rem;
 }
 
 .groom-img {
-  position: relative;
-  right: 6.188rem;
+  margin-left: -6.188rem;
   width: 46.037rem;
   height: 33.501rem;
 }
@@ -284,15 +292,14 @@ p {
 }
 
 .vegbase-img {
-  position: relative;
-  right: 4.938rem;
+  margin-left: -4.938rem;
   width: 46.84rem;
   height: 35.706rem;
 }
 
 .brillgn-img {
   position: relative;
-  right: 5rem;
+  margin-right: 5rem;
   width: 46.075rem;
   height: 33.981rem;
 }
@@ -301,7 +308,6 @@ p {
   position: relative;
   width: 37rem;
   height: 33.615rem;
-  border: 1px solid orange;
   margin-left: -593px;
   left: -5.688rem;
   top: 10.688rem;
@@ -323,7 +329,6 @@ p {
   width: 32.644rem;
   height: 39.122rem;
   align-self: flex-end;
-  border: 1px solid orange;
   margin-right: -32.688rem;
   right: -0.438rem;
   top: 3.5rem;
@@ -344,7 +349,6 @@ p {
   width: 41.501rem;
   height: 31.109rem;
   order: -1;
-  border: 1px solid orange;
   margin-left: -41.375rem;
   top: 13.063rem;
   left: -3.063rem;

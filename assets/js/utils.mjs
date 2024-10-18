@@ -1,6 +1,6 @@
-export const storiesEnText = [
+export const EnText = [
   'German',
-  `In 1941, at the end of autumn, an aeroplane appeared in the sky over Vlasovo. Fascist. It flew so low that the pilot's face was visible. <br> The German smiled broadly, waved his hand in greeting and scattered leaflets. <br> Little Olya and children ran after the plane, collected this confetti and happily waved back to the pilot. For a long time they played with colourful leaflets, where it was said that the resistance is useless, the Germans had already won and that everyone would soon be living in paradise. The war got very close…`,
+  `In 1941, at the end of autumn, an aeroplane appeared in the sky over Vlasovo. Fascist. It flew so low that the pilot's face was visible. The German smiled broadly, waved his hand in greeting and scattered leaflets. <br> Little Olya and children ran after the plane, collected this confetti and happily waved back to the pilot. For a long time they played with colourful leaflets, where it was said that the resistance is useless, the Germans had already won and that everyone would soon be living in paradise. The war got very close…`,
   'Wolves',
   `Little Olya did not like it very much when her mother went into the forest for brushwood in winter. In those days, there were many wolves in the forest. Olya was afraid that they would attack her mother, and followed her, trail after trail, to save her if something happened. Sometimes the mother did not know that the little guardian angel was watching over her. However, the danger lay in wait for Olya herself, because, in addition to the wolves, she could well get a pat on her bum.`,
   'Peats',
@@ -15,7 +15,7 @@ export const storiesEnText = [
   `Every time Olga Yegorovna came to Vlasovo, she would turn into a "green squad" and do tetanus prophylaxis. Her favourite medicine was Brilliant Green. After her arrival, everyone, from the grandson bitten by mosquitoes to the nephew with hangnails to the cats with scratches after fights, used to walk with the Brilliant Green dots. Such a caring person she was.`,
 ];
 
-export const storiesRUText = [
+export const RUText = [
   'Немец',
   `В 1941 году в конце осени в небе над Власовом появился самолёт. Фашистский. Он летел так низко, что было видно лицо лётчика. Немец широко улыбался, приветственно махал рукойи разбрасывал листовки. Маленькая Оля вместе с детьми бежали за самолётом, собирали конфетти из бумажеки радостно махали в ответ лётчику. Долго ещё они играли с красочными листовками, где было сказано, что сопротивляться бесполезно, немцы уже победили и скоро наступит райская жизнь. <br /> Война подобралась совсем близко…`,
   'Волки',
@@ -30,4 +30,37 @@ export const storiesRUText = [
   `Дочь Таня сидит на уроке. Второй класс. Учитель спрашивает ребят кем работают их мамы. Большинство не знают. Таняс нетерпением ждёт своей очереди, ведь она точно знает кем работает Ольга Егоровна. Наконец учительница спрашивает,и Таня гордо отвечает: “На овощной базе.” Про секретный институт и топливо для космических ракет она, конечно, была не в курсе. Ещё лет этак 50.`,
   'Зелёнка',
   `Каждый раз, когда Ольга Егоровна приезжала во Власово, она превращалась в "зелёный десант", и занималась профилактикой столбняка. Любимым лекарством была зелёнка. После её приезда все, от внука, покусанного комарами, племянника с цыпками и до кошек, с царапинами после драк, ходили с точками от зелёнки. Вот такая заботливая она была.`,
+];
+
+export const ENMobileText = [
+  'German',
+  `In 1941, at the end of autumn, an aeroplane appeared in the sky over Vlasovo. Fascist. It flew so low that the pilot's face was visible. The German smiled broadly, waved his hand in greeting and scattered leaflets. Little Olya and children ran after the plane, collected this confetti and happily waved back to the pilot. For a long time they played with colourful leaflets, where it was said that the resistance is useless, the Germans had already won and that everyone would soon be living in paradise. The war got very close…`,
+  'Wolves',
+  `Little Olya did not like it very much when her mother went into the forest for brushwood in winter. <p class="txtSpacing">In those days, there were many wolves in the forest. Olya was afraid that they would attack her mother, and followed her, trail after trail, to save her if something happened.</p> <p class="txtSpacing">Sometimes the mother did not know that the little guardian angel was watching over her.</p> <p class="txtSpacing">However, the danger lay in wait for Olya herself, because, in addition to the wolves, she could well get a pat on her bum.</p>`,
+  'Peats',
+  `Olya is 9 years old. <p class="txtSpacing">The mother gave her milk, a can and her younger sister Nina for company.</p> <p class="txtSpacing">Early in the morning, the girls walked for a long time through the forest through the cold dew to the "peats" (as women were called in the peat fields).</p> <p class="txtSpacing">The sisters sold them milk to use the proceeds to buy food for the family.</p> <p class="txtSpacing">Mom could rely on Olya. Despite her early childhood, the girl bought exactly what was needed and never spent money on trifles.</p> <p class="txtSpacing">Even then, she was a good housewife.</p>`,
+  'Groom',
+  `In the morning a car honks on the street. <p class="txtSpacing">Brother Victor is going to work, but bad luck, he cannot find pants. He rushes about the hut, curses, checks every corner.</p> <p class="txtSpacing">Everyone woke up from the noise.</p> <p class="txtSpacing">It turned out that Olya had put her brother's pants under her pillow since the evening so that she could see her future groom in a dream.</p> <p class="txtSpacing">It is not known whether the old omen has come true, but Vitya went to work very angrily.</p> <p class="txtSpacing">That morning, Olya with her mother and sister laughed to tears.</p>`,
+  'Kremlin',
+  `The first time Olya came to Moscow was when she got a job as a nanny. <p class="txtSpacing">She was invited to a family of relatives who lived near the Belorusskaya metro station and asked to look after her son Seryozha one and a half years old.</p> <p class="txtSpacing">Olya arrived in the capital by train.</p> <p class="txtSpacing">She got out of the car, saw the Kazan station towers and, frozen with admiration, took them for the very famous Kremlin.</p>`,
+  'Vegetable base',
+  `Second grade. <p class="txtSpacing">Daughter Tanya is sitting in the classroom.</p> <p class="txtSpacing">The teacher asks the children what are their mothers' job.</p> <p class="txtSpacing">Most don't know. Tanya is looking forward to her turn because she knows exactly what Olga Yegorovna's occupation is.</p> <p class="txtSpacing">Finally, the teacher asks, and Tanya proudly answers: "At the vegetable base."</p> <p class="txtSpacing">Of course, she was not aware of the secret institute and the fuel for space rockets.</p> <p class="txtSpacing">Another 50 years or so.</p>`,
+  'Brillant green',
+  `Every time Olga Yegorovna came to Vlasovo, she would turn into a "green squad" and do tetanus prophylaxis. <p class="txtSpacing">Her favourite medicine was Brilliant Green.</p> <p class="txtSpacing">After her arrival, everyone, from the grandson bitten by mosquitoes to the nephew with hangnails to the cats with scratches after fights, used to walk with the Brilliant Green dots.</p> <p class="txtSpacing">Such a caring person she was.</p>`,
+];
+export const RUMobileText = [
+  'Немец',
+  `В 1941 году в конце осени в небе над Власовом появился самолёт. Фашистский. Он летел так низко, что было видно лицо лётчика. <p class="txtSpacing"> Немец широко улыбался, приветственно махал рукойи разбрасывал листовки.</p> <p class="txtSpacing">Маленькая Оля вместе с детьми бежали за самолётом, собирали конфетти из бумажеки радостно махали в ответ лётчику.</p> <p class="txtSpacing">Долго ещё они играли с красочными листовками, где было сказано, что сопротивляться бесполезно, немцы уже победили и скоро наступит райская жизнь.</p> <p class="txtSpacing">Война подобралась совсем близко…</p>`,
+  'Волки',
+  `Маленькая Оля очень не любила, когда зимой мать уходила в лес за хворостом. <p class="txtSpacing">В те времена в лесу водилось много волков. Оля боялась, что они нападут на маму, и шла за ней, след в след, чтобы в случае чего спасти.</p> <p class="txtSpacing">Порою мать и не знала, что маленький ангел-хранитель приглядывает за ней.</p> <p class="txtSpacing">Впрочем, опасность подстерегала и саму Олю, ведь помимо волков, она вполне могла получить по мягкому месту.</p>`,
+  'Торфушки',
+  `Оле - 9 лет. <p class="txtSpacing">Мать давала ей банку молока и младшую сестру Нинудля компании.</p> <p class="txtSpacing">Спозаранку девочки долго шли через лес по холодной росе к "торфушкам" (так называли женщин на торфоразработках). Сёстры продавали им молоко, чтобы на вырученные деньги купить продукты для семьи.</p> <p class="txtSpacing">Мама могла положиться на Олю. Не смотряна малолетство, девочка покупала именно то, что было необходимо и никогда не тратила деньги по пустякам.</p> <p class="txtSpacing">Уже тогда она была хорошей хозяйкой.</p>`,
+  'Жених',
+  `Утром на улице сигналит машина. <p class="txtSpacing">Брат Виктор собирается на работу, но вот незадача, никак не может найти брюки. Мечется по избе, чертыхается, проверяет каждый угол.</p> <p class="txtSpacing">От шума все проснулись.</p> <p class="txtSpacing">Оказалось Оля еще с вечера положила брюки брата себе под подушку, чтобы приснился будущий жених.</p> <p class="txtSpacing">Неизвестно, сбылась ли старая примета, но Витя уехал на работу очень злой.</p> <p class="txtSpacing">В то утро Оля с матерью и сестрой смеялись до слёз.</p>`,
+  'Кремль',
+  `Первый раз Оля попала в Москву когда устраивалась в няньки. <p class="txtSpacing">Её пригласилив семью родственников, которые жилиу метро Белорусская и попросили присматривать за сынишкой Серёжей полтора года от роду.</p> <p class="txtSpacing">В столицу Оля приехала на поезде.</p> <p class="txtSpacing">Она вышла из вагона, увидела башни Казанского вокзала и, замерев от восхищения, приняла их за тот самый знаменитый Кремль.</p>`,
+  'Овощная база',
+  `Второй класс. <p class="txtSpacing">Дочь Таня сидит на уроке.</p> <p class="txtSpacing">Учитель спрашивает ребят кем работают их мамы. Большинство не знают.</p> <p class="txtSpacing">Таня с нетерпением ждёт своей очереди, ведь она точно знает кем работает Ольга Егоровна.</p> <p class="txtSpacing">Наконец учительница спрашивает,и Таня гордо отвечает: “На овощной базе.”</p> <p class="txtSpacing">Про секретный институт и топливо для космических ракет она, конечно, была не в курсе.</p> <p class="txtSpacing">Ещё лет этак 50.</p>`,
+  'Зелёнка',
+  `Каждый раз, когда Ольга Егоровна приезжала во Власово, она превращалась в "зелёный десант", и занималась профилактикой столбняка. <p class="txtSpacing">Любимым лекарством была зелёнка.</p> <p class="txtSpacing">После её приезда все, от внука, покусанного комарами, племянника с цыпками и до кошек, с царапинами после драк, ходили с точками от зелёнки.</p> <p class="txtSpacing">Вот такая заботливая она была.</p>`,
 ];

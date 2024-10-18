@@ -1,0 +1,287 @@
+@media only screen and (min-width: 1073px) and (max-width: 1440px) {
+  .hero-section {
+    height: 35rem;
+  }
+
+  .hero-img {
+    width: 31.813rem;
+    height: 11rem;
+  }
+
+  .language-selector {
+    width: 8.188rem;
+    height: 2.943rem;
+    margin-right: 5.5rem;
+  }
+
+  .razdelitel-hero-container {
+    position: absolute;
+    transform: scaleX(1);
+    margin-right: -17.6rem;
+    right: -2rem;
+    top: 1.9rem;
+  }
+
+  .german-section {
+    margin-bottom: 8.063rem;
+  }
+
+  .wolves-section {
+    margin-bottom: 5.688rem;
+  }
+
+  .peats-section {
+    margin-bottom: 9.313rem;
+  }
+
+  .groom-section {
+    margin-bottom: 2.125rem;
+  }
+
+  .kremlin-section {
+    margin-bottom: 9.125rem;
+  }
+
+  .vegetable-base-section {
+    margin-bottom: 5.688rem;
+  }
+
+  .brilliant-green-section {
+    margin-bottom: 6.688rem;
+  }
+
+  .german-subsection,
+  .wolves-subsection,
+  .peats-subsection,
+  .groom-subsection,
+  .kremlin-subsection,
+  .vegetable-base-subsection,
+  .brilliant-green-subsection {
+    /* grid-template-columns: 1fr minmax(auto, 37.188rem); */
+    grid-template-columns: 1fr minmax(auto, 34.688rem);
+    /* max-width: 77.625rem; */
+    max-width: 77.813rem;
+    gap: 1.25rem;
+    /* left: 7.188rem; */
+    /* left: 2rem; */
+  }
+
+  .kremlin-text {
+    margin-top: 9.188rem;
+  }
+
+  .brillgn-text,
+  .groom-text {
+    margin-top: 1.313rem;
+  }
+
+  .ger-text {
+    width: 30.5rem;
+  }
+
+  .wolf-text,
+  .peat-text,
+  .groom-text,
+  .kremlin-text,
+  .vegbase-text,
+  .brillgn-text {
+    width: 27.313rem;
+  }
+
+  .ger-text h1,
+  .wolf-text h1,
+  .peat-text h1,
+  .groom-text h1,
+  .kremlin-text h1,
+  .vegbase-text h1,
+  .brillgn-text h1 {
+    font-size: 3rem;
+  }
+
+  .ger-text p,
+  .wolf-text p,
+  .peat-text p,
+  .groom-text p,
+  .kremlin-text p,
+  .vegbase-text p,
+  .brillgn-text p {
+    font-size: 1.5em;
+  }
+
+  .ger-img {
+    width: 49.438rem;
+    height: 29.375rem;
+    margin-top: 0.563rem;
+  }
+
+  .wolf-img {
+    width: 37.875rem;
+    height: 34.063rem;
+    margin-left: -1.938rem;
+  }
+
+  .peat-img {
+    width: 50.25rem;
+    height: 29.813rem;
+    margin-top: 0rem;
+    margin-left: -0.875rem;
+  }
+
+  .groom-img {
+    width: 39.938rem;
+    height: 29.063rem;
+    margin-left: -1.813rem;
+  }
+
+  .kremlin-img {
+    width: 46.125rem;
+    height: 35.063rem;
+    margin-right: -2rem;
+  }
+
+  .vegbase-img {
+    width: 38.125rem;
+    height: 29.063rem;
+    margin-left: 0rem;
+  }
+
+  .brillgn-img {
+    width: 38.813rem;
+    height: 28.625rem;
+    margin-right: 0.875rem;
+  }
+
+  .razdelitel-wolf-container {
+    width: 29.375rem;
+    height: 26.688rem;
+    top: -22.312rem;
+    left: -0.5rem;
+    margin-left: -472px;
+  }
+
+  .razdelitel-groom-container {
+    width: 23.938rem;
+    height: 28.688rem;
+    top: -19rem;
+    right: 5rem;
+    margin-right: -24rem;
+  }
+
+  .razdelitel-brillgn-container {
+    width: 39.438rem;
+    height: 29.563rem;
+    top: -30rem;
+    left: 6rem;
+    margin-left: -39.375rem;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .german-section {
+    margin-bottom: 6.063rem;
+  }
+
+  .wolves-section {
+    margin-bottom: 3.688rem;
+  }
+
+  .peats-section {
+    margin-bottom: 7.313rem;
+  }
+
+  .groom-section {
+    margin-bottom: 0.125rem;
+  }
+
+  .kremlin-section {
+    margin-bottom: 7.125rem;
+  }
+
+  .vegetable-base-section {
+    margin-bottom: 3.688rem;
+  }
+
+  .brilliant-green-section {
+    margin-bottom: 4.688rem;
+  }
+
+  .subsection {
+    grid-template-columns: 1fr minmax(auto, 31.5rem);
+  }
+
+  .stories .subsection {
+    max-width: 67.625rem;
+  }
+
+  .ger-text {
+    width: 24.4rem;
+  }
+
+  .wolf-text,
+  .peat-text,
+  .groom-text,
+  .kremlin-text,
+  .vegbase-text,
+  .brillgn-text {
+    width: 21.7rem;
+  }
+
+  .kremlin-text {
+    margin-top: 7.8rem;
+  }
+
+  .ger-text h1,
+  .wolf-text h1,
+  .peat-text h1,
+  .groom-text h1,
+  .kremlin-text h1,
+  .vegbase-text h1,
+  .brillgn-text h1 {
+    font-size: 2.5em;
+  }
+
+  .ger-text p,
+  .wolf-text p,
+  .peat-text p,
+  .groom-text p,
+  .kremlin-text p,
+  .vegbase-text p,
+  .brillgn-text p {
+    font-size: 1.2em;
+  }
+
+  .ger-img {
+    width: 42.5rem;
+    height: 22.5rem;
+  }
+
+  .wolf-img {
+    width: 34.678rem;
+    height: 28.063rem;
+  }
+
+  .peat-img {
+    width: 42.813rem;
+    height: 25.4rem;
+  }
+
+  .groom-img {
+    width: 33.968rem;
+    height: 24.7rem;
+  }
+
+  .kremlin-img {
+    width: 42.3rem;
+    height: 29.8rem;
+  }
+
+  .vegbase-img {
+    width: 32.271rem;
+    height: 24.6rem;
+  }
+
+  .brillgn-img {
+    width: 33.389rem;
+    height: 24.625rem;
+  }
+}

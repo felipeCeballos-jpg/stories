@@ -1,0 +1,252 @@
+/* @media only screen and (max-width: 1089px) */
+@media only screen and (max-width: 1072px) {
+  p {
+    margin-top: 0rem;
+  }
+
+  .hero-section {
+    width: 100%;
+    height: 60vmin;
+  }
+
+  .language-container {
+    height: auto;
+    margin-top: 2vmin;
+  }
+
+  .language-selector {
+    width: 12vmin;
+    height: 5vmin;
+    margin-right: 3vmin;
+  }
+
+  .hero-container {
+    height: auto;
+    margin-top: 5vmin;
+  }
+
+  .hero-img {
+    width: 77vmin;
+    height: 100%;
+  }
+
+  .razdelitel-hero-container {
+    transform: scalex(1);
+    margin-right: 0rem;
+    margin-left: -45vmin;
+    top: 29vmin;
+    right: 0rem;
+    /*   left: 2vmin; */
+    left: -0.1vmin;
+    width: 67.18vmin;
+    height: 54.61vmin;
+  }
+
+  .stories {
+    margin: 0rem 2.5rem;
+  }
+
+  .german-section,
+  .wolves-section,
+  .peats-section,
+  .groom-section,
+  .kremlin-section,
+  .vegetable-base-section,
+  .brilliant-green-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .german-subsection,
+  .wolves-subsection,
+  .peats-subsection,
+  .groom-subsection,
+  .kremlin-subsection,
+  .vegetable-base-subsection,
+  .brilliant-green-subsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .german-subsection,
+  .peats-subsection,
+  .kremlin-subsection {
+    margin-bottom: 12vmin;
+  }
+  .german-subsection {
+    margin-top: 2vw;
+  }
+
+  .wolves-subsection,
+  .groom-subsection,
+  .vegetable-base-subsection,
+  .brilliant-green-subsection {
+    margin-top: 15vmin;
+  }
+
+  .peats-subsection {
+    margin-top: 3vmin;
+  }
+
+  .ger-text,
+  .wolf-text,
+  .peat-text,
+  .groom-text,
+  .kremlin-text,
+  .vegbase-text,
+  .brillgn-text {
+    width: 79vmin;
+    /* width: 78vw; */
+  }
+
+  /*  .vegbase-text {
+    width: 65vmin;
+  } */
+
+  .ger-text,
+  .peat-text,
+  .kremlin-text {
+    margin-top: 6.924vmin;
+  }
+
+  .ger-text {
+    /*  min-height: 146vmin; */
+    min-height: 99vmin;
+  }
+
+  .wolf-text {
+    /*  min-height: 127vmin; */
+    min-height: 99vmin;
+  }
+
+  .groom-text {
+    /* min-height: 144vmin; */
+    min-height: 109vmin;
+    margin-bottom: 4vmin;
+  }
+
+  .vegbase-text {
+    /* min-height: 172vmin; */
+    min-height: 132vmin;
+    margin-bottom: 3.5vmin;
+  }
+
+  .brillgn-text {
+    /* min-height: 109vmin; */
+    min-height: 84vmin;
+    margin-top: 1vmin;
+  }
+
+  .subsection div h1 {
+    text-align: center;
+    font-size: 8vw;
+    /* font-size: 9.235vw; */
+  }
+
+  .subsection div p {
+    font-size: 5.1vw;
+  }
+
+  .subsection .vegbase-text p {
+    font-size: 6.15vw;
+  }
+
+  .subsection div p .txtSpacing {
+    margin-top: 2vmin;
+  }
+
+  .ger-text p,
+  .wolf-text p,
+  .groom-text p,
+  .kremlin-text p,
+  .brillgn-text p {
+    margin-top: 5vmin;
+  }
+
+  .peat-text p {
+    margin-top: 6vmin;
+  }
+
+  .vegbase-text p {
+    margin-top: 6.2vmin;
+  }
+
+  .subsection img {
+    margin: 0;
+    height: 100%;
+  }
+
+  .subsection .ger-img {
+    width: 100vmin;
+  }
+
+  .subsection .wolf-img {
+    width: 86vmin;
+  }
+
+  .subsection .peat-img {
+    width: 114vmin;
+  }
+
+  .subsection .groom-img {
+    width: 97vmin;
+    margin-left: 3vmin;
+  }
+
+  .subsection .kremlin-img {
+    width: 100vmin;
+    margin-left: 10vmin;
+  }
+
+  .subsection .vegbase-img {
+    width: 95vmin;
+  }
+
+  .subsection .brillgn-img {
+    width: 98vmin;
+  }
+
+  .razdelitel-brillgn-container,
+  .razdelitel-groom-container,
+  .razdelitel-wolf-container {
+    margin: 0rem;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    order: 0;
+    z-index: 0;
+  }
+
+  .razdelitel-german-container,
+  .razdelitel-wolf-container,
+  .razdelitel-peats-container,
+  .razdelitel-groom-container,
+  .razdelitel-kremlin-container,
+  .razdelitel-vegetablebase-container {
+    /* width: 9.25rem; */
+    width: 37.99vmin;
+    height: 0.313rem;
+    margin: 0 auto;
+  }
+
+  .razdelitel-german-img,
+  .razdelitel-wolf-img,
+  .razdelitel-peats-img,
+  .razdelitel-groom-img,
+  .razdelitel-kremlin-img,
+  .razdelitel-vegetablebase-img,
+  .razdelitel-brillgn-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../razdelitel.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .razdelitel-brillgn-container {
+    display: none;
+  }
+}
