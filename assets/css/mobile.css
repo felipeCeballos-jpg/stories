@@ -14,9 +14,9 @@
   }
 
   .language-selector {
-    width: 12vmin;
-    height: 5vmin;
-    margin-right: 3vmin;
+    width: 79px;
+    right: 60px;
+    margin-right: 1vmin;
   }
 
   .hero-container {
