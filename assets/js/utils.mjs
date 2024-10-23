@@ -64,3 +64,23 @@ export const RUMobileText = [
   'Зелёнка',
   `Каждый раз, когда Ольга Егоровна приезжала во Власово, она превращалась в "зелёный десант", и занималась профилактикой столбняка. <p class="txtSpacing">Любимым лекарством была зелёнка.</p> <p class="txtSpacing">После её приезда все, от внука, покусанного комарами, племянника с цыпками и до кошек, с царапинами после драк, ходили с точками от зелёнки.</p> <p class="txtSpacing">Вот такая заботливая она была.</p>`,
 ];
+
+export const ruLang = [
+  './assets/navbook/milestones_ru.webp',
+  './assets/navbook/stories_ru.webp',
+  './assets/navbook/gallery_ru.webp',
+  './assets/navbook/my_granny_ru.webp',
+  './assets/navbook/remember_ru.webp',
+  './assets/navbook/map_ru.webp',
+  './assets/navbook/nanas_words_ru.webp',
+];
+
+export const enLang = [
+  './assets/navbook/milestones_en.webp',
+  './assets/navbook/stories_en.webp',
+  './assets/navbook/gallery_en.webp',
+  './assets/navbook/my_granny_en.webp',
+  './assets/navbook/remember_en.webp',
+  './assets/navbook/map_en.webp',
+  './assets/navbook/nanas_words_en.webp',
+];

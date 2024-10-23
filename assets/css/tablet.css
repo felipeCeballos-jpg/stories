@@ -1,4 +1,9 @@
-@media only screen and (min-width: 1073px) and (max-width: 1440px) {
+@media only screen and (min-width: 801px) and (max-width: 1440px) {
+  .stories-section {
+    max-width: 90rem;
+    width: 100%;
+  }
+
   .hero-section {
     height: 35rem;
   }
@@ -18,7 +23,9 @@
     position: absolute;
     transform: scaleX(1);
     margin-right: -17.6rem;
-    right: -2rem;
+    right: 0rem;
+    /*  left: 60rem; */
+    left: 71rem;
     top: 1.9rem;
   }
 
@@ -47,7 +54,7 @@
   }
 
   .brilliant-green-section {
-    margin-bottom: 6.688rem;
+    margin-bottom: 9.25rem;
   }
 
   .german-subsection,
@@ -174,19 +181,76 @@
     left: 6rem;
     margin-left: -39.375rem;
   }
+
+  .menu {
+    bottom: 0px;
+  }
+
+  .navbook {
+    max-width: 74.25rem;
+  }
+
+  .milestones {
+    width: 12.114rem;
+  }
+
+  .stories {
+    width: 13.278rem;
+  }
+
+  .gallery {
+    width: 11.516rem;
+  }
+
+  .my-granny {
+    width: 13.278rem;
+  }
+
+  .remember {
+    width: 13.734rem;
+  }
+
+  .map {
+    width: 12.788rem;
+  }
+
+  .nanas-words {
+    width: 11.288rem;
+  }
 }
 
 @media only screen and (max-width: 1260px) {
+  .hero-img {
+    width: 29.9rem;
+    height: 10.339rem;
+  }
+
+  .language-selector {
+    margin-right: 1.5rem;
+  }
+
+  .razdelitel-hero-container {
+    /* margin-right: -17.6rem;
+    right: -1rem; */
+    margin-right: -17.6rem;
+    right: 0rem;
+    left: 58.8rem;
+  }
+
+  .stories-section {
+    max-width: 78.75rem;
+    width: 100%;
+  }
   .german-section {
-    margin-bottom: 6.063rem;
+    margin-bottom: 6rem;
   }
 
   .wolves-section {
-    margin-bottom: 3.688rem;
+    margin-bottom: 3rem;
   }
 
   .peats-section {
-    margin-bottom: 7.313rem;
+    margin-bottom: 7rem;
   }
 
   .groom-section {
@@ -194,27 +258,28 @@
   }
 
   .kremlin-section {
-    margin-bottom: 7.125rem;
+    margin-bottom: 6rem;
   }
 
   .vegetable-base-section {
-    margin-bottom: 3.688rem;
+    margin-bottom: 3rem;
   }
 
   .brilliant-green-section {
-    margin-bottom: 4.688rem;
+    margin-bottom: 9rem;
   }
 
   .subsection {
-    grid-template-columns: 1fr minmax(auto, 31.5rem);
+    width: 100%;
+    grid-template-columns: 1fr minmax(auto, 25rem);
   }
 
-  .stories .subsection {
-    max-width: 67.625rem;
+  .stories-section .subsection {
+    max-width: 55.625rem;
   }
 
   .ger-text {
-    width: 24.4rem;
+    width: 20.3rem;
   }
 
   .wolf-text,
@@ -223,7 +288,7 @@
   .kremlin-text,
   .vegbase-text,
   .brillgn-text {
-    width: 21.7rem;
+    width: 18.2rem;
   }
 
   .kremlin-text {
@@ -237,7 +302,7 @@
   .kremlin-text h1,
   .vegbase-text h1,
   .brillgn-text h1 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .ger-text p,
@@ -247,41 +312,113 @@
   .kremlin-text p,
   .vegbase-text p,
   .brillgn-text p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .ger-img {
-    width: 42.5rem;
-    height: 22.5rem;
+    width: 34.501rem;
+    height: 20.5rem;
   }
 
   .wolf-img {
-    width: 34.678rem;
-    height: 28.063rem;
+    width: 26.353rem;
+    height: 23.7rem;
   }
 
   .peat-img {
-    width: 42.813rem;
-    height: 25.4rem;
+    width: 35.228rem;
+    height: 20.9rem;
   }
 
   .groom-img {
-    width: 33.968rem;
-    height: 24.7rem;
+    width: 28.171rem;
+    height: 20.5rem;
   }
 
   .kremlin-img {
-    width: 42.3rem;
-    height: 29.8rem;
+    width: 34.072rem;
+    height: 25.9rem;
   }
 
   .vegbase-img {
-    width: 32.271rem;
-    height: 24.6rem;
+    width: 24.794rem;
+    height: 18.9rem;
   }
 
   .brillgn-img {
-    width: 33.389rem;
-    height: 24.625rem;
+    width: 27.6rem;
+    height: 20.356rem;
+  }
+
+  .razdelitel-wolf-container {
+    width: 20.375rem;
+    height: 18.511rem;
+    top: 14.688rem;
+    margin-top: -19.312rem;
+    margin-left: -325px;
+  }
+
+  .razdelitel-groom-container {
+    width: 15.938rem;
+    height: 19.101rem;
+    top: -15rem;
+    /* right: 7rem;
+    margin-right: -16rem; */
+    margin-right: -16rem;
+    right: 0rem;
+    left: -6rem;
+  }
+
+  .razdelitel-brillgn-container {
+    width: 22.438rem;
+    height: 16.819rem;
+    margin-top: -9rem;
+    margin-left: -22.375rem;
+    top: -7rem;
+    left: 2rem;
+  }
+
+  .navbook {
+    width: 80vw;
+  }
+
+  .pages {
+    bottom: 12px;
+  }
+
+  .milestones {
+    margin: -3vmin 0 0 5vmin;
+  }
+
+  .stories {
+    margin: 1vmin 0 0 -3vmin;
+  }
+
+  .gallery {
+    margin: -4vmin 0 0 -6vmin;
+  }
+
+  .my-granny {
+    margin: 1vmin 0 0 -3vmin;
+  }
+
+  .remember {
+    margin: -4vmin 0 0 -6vmin;
+  }
+
+  .map {
+    margin: 1.5vmin 0 0 -4vmin;
+  }
+
+  .nanas-words {
+    margin: -3vmin 0 0 -3vmin;
+  }
+
+  .pages img {
+    width: 12vw;
+  }
+
+  .pages img:hover {
+    width: 12vw;
   }
 }

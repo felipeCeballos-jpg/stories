@@ -16,7 +16,29 @@ body {
 }
 
 body {
+  background-color: #f5e4d3;
+  color: #282727;
   font-family: 'MADE Likes Slab';
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  background-color: #f5e4d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+body .loader img {
+  height: 16rem;
+  width: 16rem;
 }
 
 main {
@@ -33,13 +55,24 @@ main {
   overflow-y: clip;
 }
 
-.stories {
+.subsection img,
+.hero-container img {
+  pointer-events: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  /* transition: all 0.2s ease-in-out; */
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stories-section {
   position: relative;
-  width: 120rem;
+  max-width: 120rem;
+  width: 100%;
 }
 
 .hero-section {
-  width: 100%;
   height: 29.438rem;
   flex-direction: column;
   justify-content: flex-start;
@@ -80,16 +113,17 @@ main {
   transform: scaleX(-1);
   width: 36.5rem;
   height: 29.75rem;
-  margin-right: -10rem;
-  right: -2rem;
-  /* left: 94rem; */
+  /* margin-right: -10rem;
+  right: -2rem; */
+  /* left: 50rem; */
+  left: 94rem;
   top: -4rem;
 }
 
 .razdelitel-hero-img {
   width: 100%;
   height: 100%;
-  background-image: url(../Klaksa1.png);
+  background-image: url(../Klaksa1.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -131,7 +165,7 @@ main {
 }
 
 .brilliant-green-section {
-  margin-bottom: 10.188rem;
+  margin-bottom: 5.063rem;
 }
 
 .german-subsection,
@@ -318,7 +352,7 @@ p {
 .razdelitel-wolf-img {
   width: 100%;
   height: 100%;
-  background-image: url(../Klaksa2.png);
+  background-image: url(../Klaksa2.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -331,14 +365,15 @@ p {
   align-self: flex-end;
   margin-right: -32.688rem;
   right: -0.438rem;
-  top: 3.5rem;
+  top: 8.5rem;
+  margin-top: -4rem;
   z-index: 2;
 }
 
 .razdelitel-groom-img {
   width: 100%;
   height: 100%;
-  background-image: url(../Klaksa3.png);
+  background-image: url(../Klaksa3.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -358,7 +393,112 @@ p {
 .razdelitel-brillgn-img {
   width: 100%;
   height: 100%;
-  background-image: url(../Klaksa4.png);
+  background-image: url(../Klaksa4.webp);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: 100%;
+}
+
+/* FOOTER */
+.menu {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vmin;
+}
+
+.pages {
+  display: flex;
+  position: absolute;
+  bottom: -15px;
+}
+
+.navbook {
+  /* width: 80vw; */
+  max-width: 86.833rem;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-left: -4vmin;
+  z-index: 2;
+}
+
+.milestones {
+  width: 14.167rem;
+  height: auto;
+  margin-left: 0rem;
+  margin-top: 3.125rem;
+}
+
+.stories {
+  width: 15.528rem;
+  height: auto;
+  margin-left: -3.563rem;
+  margin-left: -55px;
+  margin-top: 133px;
+  z-index: 1;
+}
+
+.gallery {
+  width: 13.506rem;
+  height: auto;
+  margin-left: -109px;
+  margin-top: 39px;
+}
+
+.my-granny {
+  width: 15.528rem;
+  height: auto;
+  margin-top: 133px;
+  margin-left: -60px;
+  z-index: 1;
+}
+
+.remember {
+  width: 16.062rem;
+  height: auto;
+  margin-left: -120px;
+  margin-top: 24px;
+}
+
+.map {
+  width: 14.956rem;
+  height: auto;
+  margin-top: 133px;
+  margin-left: -70px;
+  z-index: 1;
+}
+
+.nanas-words {
+  width: 13.239rem;
+  height: auto;
+  margin-top: 70px;
+  margin-left: -50px;
+}
+
+.pages img {
+  /*  width: 12vw; */
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0rem);
+}
+
+.pages img:hover {
+  cursor: pointer;
+  /*  width: 12vw; */
+  transform: translateY(-1rem);
+}
+
+.menu-active {
+  animation: 1.6s ease-out 0.8ms forwards activeMenu;
+}
+
+@keyframes activeMenu {
+  from {
+    transform: translateY(20rem);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

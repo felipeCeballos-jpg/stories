@@ -1,11 +1,10 @@
 /* @media only screen and (max-width: 1089px) */
-@media only screen and (max-width: 1072px) {
+@media only screen and (max-width: 800px) {
   p {
     margin-top: 0rem;
   }
 
   .hero-section {
-    width: 100%;
     height: 60vmin;
   }
 
@@ -42,8 +41,9 @@
     height: 54.61vmin;
   }
 
-  .stories {
+  .stories-section {
     margin: 0rem 2.5rem;
+    width: 100vw;
   }
 
   .german-section,
@@ -67,7 +67,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
   }
 
   .german-subsection,
@@ -119,6 +118,7 @@
   .wolf-text {
     /*  min-height: 127vmin; */
     min-height: 99vmin;
+    margin-bottom: 10vmin;
   }
 
   .groom-text {
@@ -240,7 +240,7 @@
   .razdelitel-brillgn-img {
     width: 100%;
     height: 100%;
-    background-image: url(../razdelitel.png);
+    background-image: url(../razdelitel.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -248,5 +248,205 @@
 
   .razdelitel-brillgn-container {
     display: none;
+  }
+
+  .section-navbook {
+    margin-top: 26vmin;
+  }
+
+  .pages {
+    margin-left: -5vmin;
+    bottom: 4px;
+  }
+
+  .navbook {
+    width: 110vmin;
+    margin-left: -9vmin;
+  }
+
+  .milestones {
+    margin: -3vmin 0 0 5vmin;
+  }
+
+  .stories {
+    margin: 1vmin 0 0 -3vmin;
+  }
+
+  .gallery {
+    margin: -4vmin 0 0 -6vmin;
+  }
+
+  .my-granny {
+    margin: 1vmin 0 0 -3vmin;
+  }
+
+  .remember {
+    margin: -4vmin 0 0 -6vmin;
+  }
+
+  .map {
+    margin: 1.5vmin 0 0 -4vmin;
+  }
+
+  .nanas-words {
+    margin: -3vmin 0 0 -3vmin;
+  }
+
+  .pages img {
+    width: 18vmin;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .pages img:hover {
+    width: 18vmin;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 800px) {
+  .hero-section {
+    height: 60vmax;
+  }
+
+  .language-container {
+    margin-top: 2vmax;
+  }
+
+  .language-selector {
+    width: 12vmax;
+    height: 5vmax;
+    margin-right: 3vmax;
+  }
+
+  .hero-container {
+    margin-top: 5vmax;
+  }
+
+  .hero-img {
+    width: 77vmax;
+  }
+
+  .razdelitel-hero-container {
+    margin-left: -45vmax;
+    top: 29vmax;
+    left: -0.1vmax;
+    width: 67.18vmax;
+    height: 54.61vmax;
+  }
+
+  .german-subsection,
+  .peats-subsection,
+  .kremlin-subsection {
+    margin-bottom: 12vmax;
+  }
+
+  .wolves-subsection,
+  .groom-subsection,
+  .vegetable-base-subsection,
+  .brilliant-green-subsection {
+    margin-top: 15vmax;
+  }
+
+  .peats-subsection {
+    margin-top: 3vmax;
+  }
+
+  .ger-text,
+  .wolf-text,
+  .peat-text,
+  .groom-text,
+  .kremlin-text,
+  .vegbase-text,
+  .brillgn-text {
+    width: 79vmax;
+  }
+
+  .ger-text,
+  .peat-text,
+  .kremlin-text {
+    margin-top: 6.924vmax;
+  }
+
+  .ger-text {
+    min-height: 99vmax;
+  }
+
+  .wolf-text {
+    min-height: 99vmax;
+    margin-bottom: 10vmax;
+  }
+
+  .groom-text {
+    min-height: 109vmax;
+    margin-bottom: 4vmax;
+  }
+
+  .vegbase-text {
+    min-height: 132vmax;
+    margin-bottom: 3.5vmax;
+  }
+
+  .brillgn-text {
+    min-height: 84vmax;
+    margin-top: 1vmax;
+  }
+
+  .subsection div p .txtSpacing {
+    margin-top: 2vmax;
+  }
+
+  .ger-text p,
+  .wolf-text p,
+  .groom-text p,
+  .kremlin-text p,
+  .brillgn-text p {
+    margin-top: 5vmax;
+  }
+
+  .peat-text p {
+    margin-top: 6vmax;
+  }
+
+  .vegbase-text p {
+    margin-top: 6.2vmax;
+  }
+
+  .subsection .ger-img {
+    width: 100vmax;
+  }
+
+  .subsection .wolf-img {
+    width: 86vmax;
+  }
+
+  .subsection .peat-img {
+    width: 114vmax;
+  }
+
+  .subsection .groom-img {
+    width: 97vmax;
+    margin-left: 3vmax;
+  }
+
+  .subsection .kremlin-img {
+    width: 100vmax;
+    margin-left: 10vmax;
+  }
+
+  .subsection .vegbase-img {
+    width: 95vmax;
+  }
+
+  .subsection .brillgn-img {
+    width: 98vmax;
+  }
+
+  .razdelitel-german-container,
+  .razdelitel-wolf-container,
+  .razdelitel-peats-container,
+  .razdelitel-groom-container,
+  .razdelitel-kremlin-container,
+  .razdelitel-vegetablebase-container {
+    width: 37.99vmax;
   }
 }
