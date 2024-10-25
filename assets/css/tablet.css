@@ -1,6 +1,6 @@
 @media only screen and (min-width: 801px) and (max-width: 1440px) {
   .stories-section {
-    max-width: 71rem;
+    max-width: 90rem;
     width: 100%;
   }
 
@@ -25,7 +25,7 @@
     margin-right: -17.6rem;
     right: 0rem;
     /*  left: 60rem; */
-    left: 61.5rem;
+    left: 70rem;
     top: 1.9rem;
   }
 
@@ -65,7 +65,7 @@
   .vegetable-base-subsection,
   .brilliant-green-subsection {
     grid-template-columns: 1fr minmax(auto, 31.4rem);
-    max-width: 77.813rem;
+    max-width: 71rem;
     gap: 1.25rem;
   }
 
