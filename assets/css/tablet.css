@@ -1,6 +1,6 @@
 @media only screen and (min-width: 801px) and (max-width: 1440px) {
   .stories-section {
-    max-width: 90rem;
+    max-width: 71rem;
     width: 100%;
   }
 
@@ -25,7 +25,7 @@
     margin-right: -17.6rem;
     right: 0rem;
     /*  left: 60rem; */
-    left: 71rem;
+    left: 61.5rem;
     top: 1.9rem;
   }
 
@@ -64,13 +64,13 @@
   .kremlin-subsection,
   .vegetable-base-subsection,
   .brilliant-green-subsection {
-    /* grid-template-columns: 1fr minmax(auto, 37.188rem); */
-    grid-template-columns: 1fr minmax(auto, 34.688rem);
-    /* max-width: 77.625rem; */
+    grid-template-columns: 1fr minmax(auto, 31.4rem);
     max-width: 77.813rem;
     gap: 1.25rem;
-    /* left: 7.188rem; */
-    /* left: 2rem; */
+  }
+
+  .german-subsection {
+    gap: 0rem;
   }
 
   .kremlin-text {
@@ -83,7 +83,7 @@
   }
 
   .ger-text {
-    width: 30.5rem;
+    width: 26.4rem;
   }
 
   .wolf-text,
@@ -92,7 +92,7 @@
   .kremlin-text,
   .vegbase-text,
   .brillgn-text {
-    width: 27.313rem;
+    width: 24rem;
   }
 
   .ger-text h1,
@@ -102,7 +102,7 @@
   .kremlin-text h1,
   .vegbase-text h1,
   .brillgn-text h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .ger-text p,
@@ -112,57 +112,57 @@
   .kremlin-text p,
   .vegbase-text p,
   .brillgn-text p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .ger-img {
-    width: 49.438rem;
-    height: 29.375rem;
+    width: 45.272rem;
+    height: 26.9rem;
     margin-top: 0.563rem;
   }
 
   .wolf-img {
-    width: 37.875rem;
-    height: 34.063rem;
+    width: 33.58rem;
+    height: 30.2rem;
     margin-left: -1.938rem;
   }
 
   .peat-img {
-    width: 50.25rem;
-    height: 29.813rem;
+    width: 45.194rem;
+    height: 26.813rem;
     margin-top: 0rem;
     margin-left: -0.875rem;
   }
 
   .groom-img {
-    width: 39.938rem;
-    height: 29.063rem;
+    width: 36.141rem;
+    height: 26.3rem;
     margin-left: -1.813rem;
   }
 
   .kremlin-img {
-    width: 46.125rem;
-    height: 35.063rem;
+    width: 42.491rem;
+    height: 32.3rem;
     margin-right: -2rem;
   }
 
   .vegbase-img {
-    width: 38.125rem;
-    height: 29.063rem;
+    width: 34.186rem;
+    height: 26.06rem;
     margin-left: 0rem;
   }
 
   .brillgn-img {
-    width: 38.813rem;
-    height: 28.625rem;
+    width: 35.118rem;
+    height: 25.9rem;
     margin-right: 0.875rem;
   }
 
   .razdelitel-wolf-container {
-    width: 29.375rem;
-    height: 26.688rem;
-    top: -22.312rem;
-    left: -0.5rem;
+    width: 26.074rem;
+    height: 23.688rem;
+    top: -5.312rem;
+    left: 0.5rem;
     margin-left: -472px;
   }
 
@@ -177,8 +177,8 @@
   .razdelitel-brillgn-container {
     width: 39.438rem;
     height: 29.563rem;
-    top: -30rem;
-    left: 6rem;
+    top: -28rem;
+    left: 4rem;
     margin-left: -39.375rem;
   }
 
