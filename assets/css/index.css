@@ -113,9 +113,6 @@ main {
   transform: scaleX(-1);
   width: 36.5rem;
   height: 29.75rem;
-  /* margin-right: -10rem;
-  right: -2rem; */
-  /* left: 50rem; */
   left: 94rem;
   top: -4rem;
 }
@@ -336,6 +333,13 @@ p {
   margin-right: 5rem;
   width: 46.075rem;
   height: 33.981rem;
+}
+
+.razdelitel-german-container,
+.razdelitel-peats-container,
+.razdelitel-kremlin-container,
+.razdelitel-vegetablebase-container {
+  display: none;
 }
 
 .razdelitel-wolf-container {

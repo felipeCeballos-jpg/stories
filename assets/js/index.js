@@ -37,9 +37,11 @@ window.addEventListener('load', () => {
 window.addEventListener('DOMContentLoaded', () => {
   changeLanguage('russian', mqlMobile.matches);
   booksAnimation();
+  console.log('DOMContentLoaded');
 });
 
 switchLanguageButton.addEventListener('click', () => {
+  console.log('Clicked');
   const currentLanguage =
     switchLanguageButton.dataset.language === 'russian' ? 'english' : 'russian';
   loader.style.display = 'flex';
@@ -54,7 +56,8 @@ switchLanguageButton.addEventListener('click', () => {
 mqlMobile.addEventListener('change', (event) => {
   if (!event.matches) return;
   loader.style.display = 'flex';
-  console.log('Mobile');
+
+  console.log('Mobile MQL');
   const currentAssets = changeLanguage(
     switchLanguageButton.dataset.language,
     event.matches
@@ -68,6 +71,7 @@ mqlDefault.addEventListener('change', (event) => {
   if (!event.matches) return;
   loader.style.display = 'flex';
 
+  console.log('Default MQL');
   const currentAssets = changeLanguage(
     switchLanguageButton.dataset.language,
     false
@@ -86,7 +90,7 @@ function changeLanguage(language, isMobile = false) {
   const currentResource = localizedText[language][deviceType];
   let imagesLoaded = 0;
   const totalImages = imageElements.length;
-  console.log({ deviceType });
+
   // Update Text
   textElements.forEach((text, index) => {
     text.innerHTML = currentResource.texts[index];
@@ -98,10 +102,8 @@ function changeLanguage(language, isMobile = false) {
       ? './assets/klubok_en.png'
       : './assets/klubok_ru.png';
 
-  console.log({ imageElements });
   // Update Footer Images
   imageElements.forEach((image, index) => {
-    console.log({ image: image });
     image.src = currentResource.images[index];
     image.onload = () => imagesLoaded++;
     image.onerror = () => {
@@ -119,6 +121,8 @@ function checkImagesLoaded(callback, loaderElement, delayLoadingPage = false) {
   const maxLoadingTime = 3000; // 3 seconds
   const checkInterval = 100; // Interval time in ms
   const startTime = Date.now();
+
+  console.log('Check images laoded');
 
   const checkLoadStatus = setInterval(() => {
     if (callback()) {
