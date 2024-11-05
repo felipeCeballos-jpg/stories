@@ -208,6 +208,13 @@
     width: 98vmin;
   }
 
+  .razdelitel-german-container,
+  .razdelitel-peats-container,
+  .razdelitel-kremlin-container,
+  .razdelitel-vegetablebase-container {
+    display: block;
+  }
+
   .razdelitel-brillgn-container,
   .razdelitel-groom-container,
   .razdelitel-wolf-container {
