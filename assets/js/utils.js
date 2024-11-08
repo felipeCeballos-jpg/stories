@@ -66,21 +66,21 @@ export const RUMobileText = [
 ];
 
 export const ruLang = [
-  './assets/navbook/milestones_ru.webp',
-  './assets/navbook/stories_ru.webp',
-  './assets/navbook/gallery_ru.webp',
-  './assets/navbook/my_granny_ru.webp',
-  './assets/navbook/remember_ru.webp',
-  './assets/navbook/map_ru.webp',
-  './assets/navbook/nanas_words_ru.webp',
+  './assets/navbook/main_ru.png',
+  './assets/navbook/milestones_ru.png',
+  './assets/navbook/gallery_ru.png',
+  './assets/navbook/my_granny_ru.png',
+  './assets/navbook/remember_ru.png',
+  './assets/navbook/map_ru.png',
+  './assets/navbook/nanas_words_ru.png',
 ];
 
 export const enLang = [
-  './assets/navbook/milestones_en.webp',
-  './assets/navbook/stories_en.webp',
-  './assets/navbook/gallery_en.webp',
-  './assets/navbook/my_granny_en.webp',
-  './assets/navbook/remember_en.webp',
-  './assets/navbook/map_en.webp',
-  './assets/navbook/nanas_words_en.webp',
+  './assets/navbook/main_en.png',
+  './assets/navbook/milestones_en.png',
+  './assets/navbook/gallery_en.png',
+  './assets/navbook/my_granny_en.png',
+  './assets/navbook/remember_en.png',
+  './assets/navbook/map_en.png',
+  './assets/navbook/nanas_words_en.png',
 ];

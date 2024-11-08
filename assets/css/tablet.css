@@ -1,4 +1,4 @@
-@media only screen and (min-width: 801px) and (max-width: 1440px) {
+@media only screen and (min-width: 801px) and (max-width: 1366px) {
   .stories-section {
     max-width: 90rem;
     width: 100%;
@@ -53,9 +53,9 @@
     margin-bottom: 5rem;
   }
 
-  .brilliant-green-section {
+  /* .brilliant-green-section {
     margin-bottom: 9rem;
-  }
+  } */
 
   .german-subsection,
   .wolves-subsection,
@@ -184,17 +184,22 @@
 
   .menu {
     bottom: 0px;
+    margin-top: 12.125rem;
+  }
+
+  .pages {
+    bottom: -87px;
   }
 
   .navbook {
     max-width: 74.25rem;
   }
 
-  .milestones {
+  .main {
     width: 12.114rem;
   }
 
-  .stories {
+  .milestones {
     width: 13.278rem;
   }
 
@@ -265,9 +270,9 @@
     margin-bottom: 3rem;
   }
 
-  .brilliant-green-section {
+  /* .brilliant-green-section {
     margin-bottom: 9rem;
-  }
+  } */
 
   .subsection {
     width: 100%;
@@ -386,11 +391,11 @@
     bottom: 12px;
   }
 
-  .milestones {
+  .main {
     margin: -3vmin 0 0 5vmin;
   }
 
-  .stories {
+  .milestones {
     margin: 1vmin 0 0 -3vmin;
   }
 
