@@ -5,7 +5,7 @@ import {
   RUMobileText,
   enLang,
   ruLang,
-} from './utils.js';
+} from './index.js';
 
 const switchLanguageButton = document.getElementById('language-selector');
 const localizedText = {
