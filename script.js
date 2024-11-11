@@ -35,7 +35,9 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  changeLanguage('russian', mqlMobile.matches);
+  const language = switchLanguageButton.dataset.language;
+
+  changeLanguage(language, mqlMobile.matches);
   booksAnimation();
   console.log('DOMContentLoaded');
 });
@@ -143,6 +145,7 @@ function checkImagesLoaded(callback, loaderElement, delayLoadingPage = false) {
 }
 
 function booksAnimation() {
+  console.log('animate');
   resetAnimation([{ selector: '.menu', animationClass: 'menu-active' }]);
 
   const footer = document.querySelector('.section-navbook');
@@ -167,6 +170,7 @@ function booksAnimation() {
 
 function resetAnimation(elements) {
   if (elements.length === 0) return;
+  console.log('Reset Animation');
 
   elements.forEach(({ selector, animationClass }) => {
     const element = document.querySelector(selector);
