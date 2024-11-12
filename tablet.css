@@ -1,8 +1,4 @@
 @media only screen and (min-width: 801px) and (max-width: 1366px) {
-  main {
-    padding: 0px 16px;
-  }
-
   .stories-section {
     max-width: 90rem;
     width: 100%;
@@ -221,6 +217,10 @@
 }
 
 @media only screen and (max-width: 1260px) {
+  main {
+    padding: 0px 16px;
+  }
+
   .hero-img {
     width: 29.9rem;
     height: 10.339rem;
