@@ -354,6 +354,7 @@ p {
   justify-content: center;
   align-items: center;
   margin-top: 19.313rem;
+  transform: translateY(16.569rem);
 }
 
 .pages {
@@ -425,7 +426,7 @@ p {
 
 @keyframes activeMenu {
   from {
-    transform: translateY(20rem);
+    transform: translateY(16.569rem);
   }
   to {
     transform: translateY(0);
