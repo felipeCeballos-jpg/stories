@@ -153,7 +153,7 @@ function booksAnimation() {
       });
     },
     {
-      rootMargin: '20px',
+      rootMargin: '-20px',
       threshold: 0,
     }
   );

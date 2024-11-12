@@ -188,7 +188,6 @@
     margin-left: -45vmin;
     top: 29vmin;
     right: 0rem;
-    /*   left: 2vmin; */
     left: -0.1vmin;
     width: 67.18vmin;
     height: 54.61vmin;
@@ -250,12 +249,7 @@
   .vegbase-text,
   .brillgn-text {
     width: 79vmin;
-    /* width: 78vw; */
   }
-
-  /*  .vegbase-text {
-      width: 65vmin;
-    } */
 
   .ger-text,
   .peat-text,
@@ -403,23 +397,18 @@
     display: none;
   }
 
-  /* .section-navbook {
-      margin-top: 26vmin;
-    } */
-
   .menu {
     width: 100%;
-    /* margin-top: 12.875rem; */
     margin-top: 31vmin;
   }
 
   .pages {
     margin-left: -5vmin;
-    /*  bottom: -86px; */
     bottom: -11.1vmin;
   }
 
   .navbook {
+    max-width: 110vmin;
     width: 110vmin;
     margin-left: -9vmin;
   }

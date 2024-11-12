@@ -1,4 +1,8 @@
 @media only screen and (min-width: 801px) and (max-width: 1366px) {
+  main {
+    padding: 0px 16px;
+  }
+
   .stories-section {
     max-width: 90rem;
     width: 100%;
@@ -17,7 +21,7 @@
   .language-selector {
     width: 8.188rem;
     height: 2.943rem;
-    margin-right: 5.5rem;
+    margin-right: 0rem;
   }
 
   .razdelitel-hero-container {
@@ -25,7 +29,7 @@
     transform: scaleX(1);
     margin-right: -17.6rem;
     right: 0rem;
-    left: 65rem;
+    left: 60rem;
     top: 1.9rem;
   }
 
@@ -112,8 +116,6 @@
   }
 
   .ger-img {
-    /* width: 45.272rem;
-    height: 26.9rem; */
     width: 724.352px;
     height: 430.4px;
     margin-top: 0.563rem;
@@ -161,7 +163,7 @@
     height: 23.688rem;
     top: -5.312rem;
     left: 0.5rem;
-    margin-left: -472px;
+    margin-left: -418px;
   }
 
   .razdelitel-groom-container {
@@ -186,11 +188,7 @@
   }
 
   .pages {
-    bottom: -87px;
-  }
-
-  .navbook {
-    max-width: 74.25rem;
+    bottom: -39px;
   }
 
   .main {
@@ -233,11 +231,9 @@
   }
 
   .razdelitel-hero-container {
-    /* margin-right: -17.6rem;
-    right: -1rem; */
     margin-right: -17.6rem;
     right: 0rem;
-    left: 58.8rem;
+    left: 53.4rem;
   }
 
   .stories-section {
@@ -267,10 +263,6 @@
   .vegetable-base-section {
     margin-bottom: 3rem;
   }
-
-  /* .brilliant-green-section {
-    margin-bottom: 9rem;
-  } */
 
   .subsection {
     width: 100%;
@@ -321,8 +313,6 @@
   .ger-img {
     width: 552.016px;
     height: 328px;
-    /* width: 34.501rem;
-    height: 20.5rem; */
   }
 
   .wolf-img {
@@ -367,8 +357,6 @@
     width: 15.938rem;
     height: 19.101rem;
     top: -15rem;
-    /* right: 7rem;
-    margin-right: -16rem; */
     margin-right: -16rem;
     right: 0rem;
     left: -6rem;

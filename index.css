@@ -50,7 +50,7 @@ main {
   background-size: 100dvh 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 0px 16px;
+  padding: 0px 100px;
   overflow-x: hidden;
   overflow-y: clip;
 }
@@ -161,10 +161,6 @@ main {
   margin-bottom: 7.313rem;
 }
 
-/* .brilliant-green-section {
-  margin-bottom: 4.063rem;
-} */
-
 .german-subsection,
 .wolves-subsection,
 .peats-subsection,
@@ -241,8 +237,6 @@ p {
 
 .ger-img {
   margin-top: 1.75rem;
-  /* width: 49.824rem; */
-  /* height: 29.625rem; */
   width: 797.184px;
   height: 474px;
 }
@@ -365,11 +359,11 @@ p {
 .pages {
   display: flex;
   position: absolute;
-  bottom: -117px;
+  bottom: -87px;
 }
 
 .navbook {
-  max-width: 86.833rem;
+  max-width: 80vw;
   width: 100%;
   margin-bottom: 0px;
   margin-left: -4vmin;
@@ -377,59 +371,45 @@ p {
 }
 
 .main {
-  width: 14.167rem;
+  margin: -3vmin 0 0 5vmin;
   height: 100%;
-  margin-left: 0rem;
-  margin-top: 1.375rem;
 }
 
 .milestones {
-  width: 15.528rem;
+  margin: 1vmin 0 0 -3vmin;
   height: 100%;
-  margin-left: -3.563rem;
-  margin-left: -55px;
-  margin-top: 5.25rem;
   z-index: 1;
 }
 
 .gallery {
-  width: 13.506rem;
+  margin: -4vmin 0 0 -6vmin;
   height: 100%;
-  margin-left: -109px;
-  margin-top: 0.875rem;
 }
 
 .my-granny {
-  width: 15.528rem;
+  margin: 1vmin 0 0 -3vmin;
   height: 100%;
-  margin-top: 5.25rem;
-  margin-left: -60px;
   z-index: 1;
 }
 
 .remember {
-  width: 16.062rem;
+  margin: -4vmin 0 0 -6vmin;
   height: 100%;
-  margin-left: -120px;
-  /* margin-top: 24px; */
 }
 
 .map {
-  width: 14.956rem;
+  margin: 1.5vmin 0 0 -4vmin;
   height: 100%;
-  margin-top: 5.813rem;
-  margin-left: -70px;
   z-index: 1;
 }
 
 .nanas-words {
-  width: 13.239rem;
+  margin: -3vmin 0 0 -3vmin;
   height: 100%;
-  margin-top: 2.313rem;
-  margin-left: -50px;
 }
 
 .pages img {
+  width: 12vw;
   transition: transform 0.3s ease-in-out;
   transform: translateY(0rem);
 }
@@ -449,5 +429,53 @@ p {
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 1367px) {
+  .navbook {
+    max-width: 1196px;
+  }
+
+  .pages .main {
+    width: 196px;
+    margin-left: 0rem;
+    margin-top: 1.375rem;
+  }
+
+  .pages .milestones {
+    width: 194px;
+    margin-left: -55px;
+    margin-top: 5.25rem;
+  }
+
+  .pages .gallery {
+    width: 187px;
+    margin-left: -90px;
+    margin-top: 0.875rem;
+  }
+
+  .pages .my-granny {
+    width: 215px;
+    margin-top: 5.25rem;
+    margin-left: -60px;
+  }
+
+  .pages .remember {
+    width: 223px;
+    margin-left: -120px;
+    margin-top: 0.4rem;
+  }
+
+  .pages .map {
+    width: 207px;
+    margin-top: 5.813rem;
+    margin-left: -70px;
+  }
+
+  .pages .nanas-words {
+    width: 183px;
+    margin-top: 2.313rem;
+    margin-left: -50px;
   }
 }
