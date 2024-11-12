@@ -1,46 +1,46 @@
 @media only screen and (orientation: landscape) and (max-width: 800px) {
   .language-container {
-    margin-top: 2vmax;
+    margin-top: 2vmax !important;
   }
 
   .language-selector {
-    width: 12vmax;
-    height: 5vmax;
-    margin-right: 3vmax;
+    width: 12vmax !important;
+    height: 5vmax !important;
+    margin-right: 3vmax !important;
   }
 
   .hero-container {
-    margin-top: 10vmax;
-    margin-bottom: 19vmax;
+    margin-top: 10vmax !important;
+    margin-bottom: 19vmax !important;
   }
 
   .hero-img {
-    width: 77vmax;
+    width: 77vmax !important;
   }
 
   .razdelitel-hero-container {
-    margin-left: -45vmax;
-    top: 29vmax;
-    left: -0.1vmax;
-    width: 67.18vmax;
-    height: 54.61vmax;
+    margin-left: -45vmax !important;
+    top: 29vmax !important;
+    left: -0.1vmax !important;
+    width: 67.18vmax !important;
+    height: 54.61vmax !important;
   }
 
   .german-subsection,
   .peats-subsection,
   .kremlin-subsection {
-    margin-bottom: 12vmax;
+    margin-bottom: 12vmax !important;
   }
 
   .wolves-subsection,
   .groom-subsection,
   .vegetable-base-subsection,
   .brilliant-green-subsection {
-    margin-top: 15vmax;
+    margin-top: 15vmax !important;
   }
 
   .peats-subsection {
-    margin-top: 3vmax;
+    margin-top: 3vmax !important;
   }
 
   .ger-text,
@@ -50,41 +50,41 @@
   .kremlin-text,
   .vegbase-text,
   .brillgn-text {
-    width: 79vmax;
+    width: 79vmax !important;
   }
 
   .ger-text,
   .peat-text,
   .kremlin-text {
-    margin-top: 6.924vmax;
+    margin-top: 6.924vmax !important;
   }
 
   .ger-text {
-    min-height: 99vmax;
+    min-height: 99vmax !important;
   }
 
   .wolf-text {
-    min-height: 99vmax;
-    margin-bottom: 10vmax;
+    min-height: 99vmax !important;
+    margin-bottom: 10vmax !important;
   }
 
   .groom-text {
-    min-height: 109vmax;
-    margin-bottom: 4vmax;
+    min-height: 109vmax !important;
+    margin-bottom: 4vmax !important;
   }
 
   .vegbase-text {
-    min-height: 132vmax;
-    margin-bottom: 3.5vmax;
+    min-height: 132vmax !important;
+    margin-bottom: 3.5vmax !important;
   }
 
   .brillgn-text {
-    min-height: 84vmax;
-    margin-top: 1vmax;
+    min-height: 84vmax !important;
+    margin-top: 1vmax !important;
   }
 
   .subsection div p .txtSpacing {
-    margin-top: 2vmax;
+    margin-top: 2vmax !important;
   }
 
   .ger-text p,
@@ -92,45 +92,45 @@
   .groom-text p,
   .kremlin-text p,
   .brillgn-text p {
-    margin-top: 5vmax;
+    margin-top: 5vmax !important;
   }
 
   .peat-text p {
-    margin-top: 6vmax;
+    margin-top: 6vmax !important;
   }
 
   .vegbase-text p {
-    margin-top: 6.2vmax;
+    margin-top: 6.2vmax !important;
   }
 
   .subsection .ger-img {
-    width: 100vmax;
+    width: 100vmax !important;
   }
 
   .subsection .wolf-img {
-    width: 86vmax;
+    width: 86vmax !important;
   }
 
   .subsection .peat-img {
-    width: 114vmax;
+    width: 114vmax !important;
   }
 
   .subsection .groom-img {
-    width: 97vmax;
-    margin-left: 3vmax;
+    width: 97vmax !important;
+    margin-left: 3vmax !important;
   }
 
   .subsection .kremlin-img {
-    width: 100vmax;
-    margin-left: 10vmax;
+    width: 100vmax !important;
+    margin-left: 10vmax !important;
   }
 
   .subsection .vegbase-img {
-    width: 95vmax;
+    width: 95vmax !important;
   }
 
   .subsection .brillgn-img {
-    width: 98vmax;
+    width: 98vmax !important;
   }
 
   .razdelitel-german-container,
@@ -139,23 +139,28 @@
   .razdelitel-groom-container,
   .razdelitel-kremlin-container,
   .razdelitel-vegetablebase-container {
-    width: 37.99vmax;
+    width: 37.99vmax !important;
   }
 
   .navbook {
-    width: 100%;
+    max-width: 110vmax !important;
+    width: 100% !important;
   }
 
   .menu {
-    margin-top: 31vmax;
+    margin-top: 31vmax !important;
   }
 
   .pages img {
-    width: 14vmax;
+    width: 14vmax !important;
   }
 }
 
 @media only screen and (max-width: 800px) {
+  main {
+    padding: 0px 16px;
+  }
+
   p {
     margin-top: 0rem;
   }
