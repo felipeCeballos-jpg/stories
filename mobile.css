@@ -27,20 +27,23 @@
   }
 
   .german-subsection,
+  .wolves-subsection,
   .peats-subsection,
-  .kremlin-subsection {
+  .kremlin-subsection,
+  .groom-subsection {
     margin-bottom: 12vmax !important;
   }
 
   .wolves-subsection,
   .groom-subsection,
   .vegetable-base-subsection,
-  .brilliant-green-subsection {
+  .brilliant-green-subsection,
+  .peats-subsection {
     margin-top: 15vmax !important;
   }
 
-  .peats-subsection {
-    margin-top: 3vmax !important;
+  .kremlin-subsection {
+    margin-top: 8vmax !important;
   }
 
   .ger-text,
@@ -65,7 +68,6 @@
 
   .wolf-text {
     min-height: 99vmax !important;
-    margin-bottom: 10vmax !important;
   }
 
   .groom-text {
@@ -227,8 +229,10 @@
   }
 
   .german-subsection,
+  .wolves-subsection,
   .peats-subsection,
-  .kremlin-subsection {
+  .kremlin-subsection,
+  .groom-subsection {
     margin-bottom: 12vmin;
   }
   .german-subsection {
@@ -238,12 +242,13 @@
   .wolves-subsection,
   .groom-subsection,
   .vegetable-base-subsection,
-  .brilliant-green-subsection {
+  .brilliant-green-subsection,
+  .peats-subsection {
     margin-top: 15vmin;
   }
 
-  .peats-subsection {
-    margin-top: 3vmin;
+  .kremlin-subsection {
+    margin-top: 8vmin;
   }
 
   .ger-text,
@@ -268,7 +273,6 @@
 
   .wolf-text {
     min-height: 99vmin;
-    margin-bottom: 10vmin;
   }
 
   .groom-text {
@@ -295,9 +299,9 @@
     font-size: 5.1vw;
   }
 
-  .subsection .vegbase-text p {
+  /* .subsection .vegbase-text p {
     font-size: 6.15vw;
-  }
+  } */
 
   .subsection div p .txtSpacing {
     margin-top: 2vmin;
