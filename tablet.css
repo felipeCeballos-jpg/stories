@@ -116,8 +116,10 @@
   }
 
   .ger-img {
-    width: 45.272rem;
-    height: 26.9rem;
+    /* width: 45.272rem;
+    height: 26.9rem; */
+    width: 724.352px;
+    height: 430.4px;
     margin-top: 0.563rem;
   }
 
@@ -321,8 +323,10 @@
   }
 
   .ger-img {
-    width: 34.501rem;
-    height: 20.5rem;
+    width: 552.016px;
+    height: 328px;
+    /* width: 34.501rem;
+    height: 20.5rem; */
   }
 
   .wolf-img {

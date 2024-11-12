@@ -240,8 +240,10 @@ p {
 
 .ger-img {
   margin-top: 1.75rem;
-  width: 49.824rem;
-  height: 29.625rem;
+  /* width: 49.824rem; */
+  /* height: 29.625rem; */
+  width: 797.184px;
+  height: 474px;
 }
 
 .wolf-img {
