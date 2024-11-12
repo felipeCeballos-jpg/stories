@@ -119,7 +119,7 @@ main {
 .razdelitel-hero-img {
   width: 100%;
   height: 100%;
-  background-image: url('./assets/Klaksa1.webp');
+  background-image: url('./assets/Klaksa1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -303,7 +303,7 @@ p {
 .razdelitel-wolf-img {
   width: 100%;
   height: 100%;
-  background-image: url('./assets/Klaksa2.webp');
+  background-image: url('./assets/Klaksa2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -324,7 +324,7 @@ p {
 .razdelitel-groom-img {
   width: 100%;
   height: 100%;
-  background-image: url('./assets/Klaksa3.webp');
+  background-image: url('./assets/Klaksa3.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -344,7 +344,7 @@ p {
 .razdelitel-brillgn-img {
   width: 100%;
   height: 100%;
-  background-image: url('./assets/Klaksa4.webp');
+  background-image: url('./assets/Klaksa4.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
