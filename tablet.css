@@ -4,8 +4,9 @@
     width: 100%;
   }
 
-  .hero-section {
-    height: 35rem;
+  .hero-container {
+    margin-top: 8.688rem;
+    margin-bottom: 13.125rem;
   }
 
   .hero-img {
@@ -24,8 +25,7 @@
     transform: scaleX(1);
     margin-right: -17.6rem;
     right: 0rem;
-    /*  left: 60rem; */
-    left: 70rem;
+    left: 65rem;
     top: 1.9rem;
   }
 
@@ -52,10 +52,6 @@
   .vegetable-base-section {
     margin-bottom: 5rem;
   }
-
-  /* .brilliant-green-section {
-    margin-bottom: 9rem;
-  } */
 
   .german-subsection,
   .wolves-subsection,

@@ -72,7 +72,6 @@ main {
 }
 
 .hero-section {
-  height: 29.438rem;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -92,6 +91,8 @@ main {
   display: grid;
   place-content: center;
   height: 100%;
+  margin-top: 11.563rem;
+  margin-bottom: 17.813rem;
 }
 
 .language-selector {

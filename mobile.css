@@ -1,8 +1,4 @@
 @media only screen and (orientation: landscape) and (max-width: 800px) {
-  .hero-section {
-    height: 60vmax;
-  }
-
   .language-container {
     margin-top: 2vmax;
   }
@@ -14,7 +10,8 @@
   }
 
   .hero-container {
-    margin-top: 5vmax;
+    margin-top: 10vmax;
+    margin-bottom: 19vmax;
   }
 
   .hero-img {
@@ -163,10 +160,6 @@
     margin-top: 0rem;
   }
 
-  .hero-section {
-    height: 60vmin;
-  }
-
   .language-container {
     height: auto;
     margin-top: 2vmin;
@@ -180,7 +173,8 @@
 
   .hero-container {
     height: auto;
-    margin-top: 5vmin;
+    margin-top: 10vmin;
+    margin-bottom: 19vmin;
   }
 
   .hero-img {
