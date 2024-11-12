@@ -216,6 +216,12 @@
   }
 }
 
+@media only screen and (orientation: landscape) and (max-width: 1260px) {
+  .pages {
+    bottom: -6.5vmax !important;
+  }
+}
+
 @media only screen and (max-width: 1260px) {
   main {
     padding: 0px 16px;
