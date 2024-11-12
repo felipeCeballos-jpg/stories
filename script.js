@@ -39,33 +39,30 @@ window.addEventListener('DOMContentLoaded', () => {
 
   changeLanguage(language, mqlMobile.matches);
   booksAnimation();
-  console.log('DOMContentLoaded');
 });
 
 switchLanguageButton.addEventListener('click', () => {
-  console.log('Clicked');
   const currentLanguage =
     switchLanguageButton.dataset.language === 'russian' ? 'english' : 'russian';
   loader.style.display = 'flex';
 
   const currentAssets = changeLanguage(currentLanguage, mqlMobile.matches);
-  switchLanguageButton.dataset.language = currentLanguage;
   booksAnimation();
 
   checkImagesLoaded(currentAssets.imagesLoaded, loader);
+  switchLanguageButton.dataset.language = currentLanguage;
 });
 
 mqlMobile.addEventListener('change', (event) => {
   if (!event.matches) return;
   loader.style.display = 'flex';
 
-  console.log('Mobile MQL');
+  booksAnimation();
   const currentAssets = changeLanguage(
     switchLanguageButton.dataset.language,
     event.matches
   );
 
-  booksAnimation();
   checkImagesLoaded(currentAssets.imagesLoaded, loader);
 });
 
@@ -73,13 +70,12 @@ mqlDefault.addEventListener('change', (event) => {
   if (!event.matches) return;
   loader.style.display = 'flex';
 
-  console.log('Default MQL');
+  booksAnimation();
   const currentAssets = changeLanguage(
     switchLanguageButton.dataset.language,
     false
   );
 
-  booksAnimation();
   checkImagesLoaded(currentAssets.imagesLoaded, loader);
 });
 
@@ -124,8 +120,6 @@ function checkImagesLoaded(callback, loaderElement, delayLoadingPage = false) {
   const checkInterval = 100; // Interval time in ms
   const startTime = Date.now();
 
-  console.log('Check images laoded');
-
   const checkLoadStatus = setInterval(() => {
     if (callback()) {
       const elapsedTime = Date.now() - startTime;
@@ -145,7 +139,6 @@ function checkImagesLoaded(callback, loaderElement, delayLoadingPage = false) {
 }
 
 function booksAnimation() {
-  console.log('animate');
   resetAnimation([{ selector: '.menu', animationClass: 'menu-active' }]);
 
   const footer = document.querySelector('.section-navbook');
@@ -160,7 +153,7 @@ function booksAnimation() {
       });
     },
     {
-      rootMargin: '0px',
+      rootMargin: '20px',
       threshold: 0,
     }
   );
@@ -170,7 +163,6 @@ function booksAnimation() {
 
 function resetAnimation(elements) {
   if (elements.length === 0) return;
-  console.log('Reset Animation');
 
   elements.forEach(({ selector, animationClass }) => {
     const element = document.querySelector(selector);
