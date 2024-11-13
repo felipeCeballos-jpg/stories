@@ -15,8 +15,6 @@
   }
 
   .language-selector {
-    width: 8.188rem;
-    height: 2.943rem;
     margin-right: 0rem;
   }
 
@@ -60,12 +58,15 @@
   .kremlin-subsection,
   .vegetable-base-subsection,
   .brilliant-green-subsection {
-    grid-template-columns: 1fr minmax(auto, 31.4rem);
+    /*  grid-template-columns: 1fr minmax(auto, 31.4rem); */
+    /* grid-template-columns: 1fr minmax(28.063rem, 31.4rem); */
+    grid-template-columns: 1fr minmax(auto, 28.063rem);
     max-width: 71rem;
     gap: 1.25rem;
   }
 
-  .german-subsection {
+  .german-subsection,
+  .peats-subsection {
     gap: 0rem;
   }
 
@@ -216,24 +217,20 @@
   }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 1260px) {
+@media only screen and (orientation: landscape) and (max-width: 1120px) {
   .pages {
     bottom: -6.5vmax !important;
   }
 }
 
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 1120px) {
   main {
-    padding: 0px 16px;
+    padding: 0px 50px;
   }
 
   .hero-img {
     width: 29.9rem;
     height: 10.339rem;
-  }
-
-  .language-selector {
-    margin-right: 1.5rem;
   }
 
   .razdelitel-hero-container {
@@ -324,6 +321,7 @@
   .wolf-img {
     width: 26.353rem;
     height: 23.7rem;
+    margin-left: -1.5rem;
   }
 
   .peat-img {
@@ -334,6 +332,8 @@
   .groom-img {
     width: 28.171rem;
     height: 20.5rem;
+    /* margin-left: -3.3rem; */
+    margin-left: -1.3rem;
   }
 
   .kremlin-img {
