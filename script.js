@@ -49,7 +49,7 @@ switchLanguageButton.addEventListener('click', () => {
   const currentAssets = changeLanguage(currentLanguage, mqlMobile.matches);
   booksAnimation();
 
-  checkImagesLoaded(currentAssets.imagesLoaded, loader);
+  checkImagesLoaded(currentAssets.imagesLoaded, loader, true);
   switchLanguageButton.dataset.language = currentLanguage;
 });
 
@@ -116,6 +116,7 @@ function changeLanguage(language, isMobile = false) {
 }
 
 function checkImagesLoaded(callback, loaderElement, delayLoadingPage = false) {
+  console.log('Check images loaded');
   const maxLoadingTime = 3000; // 3 seconds
   const checkInterval = 100; // Interval time in ms
   const startTime = Date.now();
@@ -123,7 +124,9 @@ function checkImagesLoaded(callback, loaderElement, delayLoadingPage = false) {
   const checkLoadStatus = setInterval(() => {
     if (callback()) {
       const elapsedTime = Date.now() - startTime;
+      console.log({ elapsedTime });
       const timeRemaining = maxLoadingTime - elapsedTime;
+      console.log({ timeRemaining });
 
       if (delayLoadingPage && elapsedTime < maxLoadingTime) {
         setTimeout(() => {
@@ -154,7 +157,7 @@ function booksAnimation() {
     },
     {
       rootMargin: '0px',
-      threshold: 0.6,
+      threshold: 0.8,
     }
   );
 
