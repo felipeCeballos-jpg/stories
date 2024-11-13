@@ -153,6 +153,10 @@
     margin-top: 31vmax !important;
   }
 
+  .pages {
+    bottom: 9px;
+  }
+
   .pages img {
     width: 14vmax !important;
   }
@@ -299,10 +303,6 @@
     font-size: 5.1vw;
   }
 
-  /* .subsection .vegbase-text p {
-    font-size: 6.15vw;
-  } */
-
   .subsection div p .txtSpacing {
     margin-top: 2vmin;
   }
@@ -413,41 +413,13 @@
 
   .pages {
     margin-left: -5vmin;
-    bottom: -11.1vmin;
+    bottom: 4px;
   }
 
   .navbook {
     max-width: 110vmin;
     width: 110vmin;
     margin-left: -9vmin;
-  }
-
-  .main {
-    margin: -3vmin 0 0 5vmin;
-  }
-
-  .milestones {
-    margin: 1vmin 0 0 -3vmin;
-  }
-
-  .gallery {
-    margin: -4vmin 0 0 -6vmin;
-  }
-
-  .my-granny {
-    margin: 1vmin 0 0 -3vmin;
-  }
-
-  .remember {
-    margin: -4vmin 0 0 -6vmin;
-  }
-
-  .map {
-    margin: 1.5vmin 0 0 -4vmin;
-  }
-
-  .nanas-words {
-    margin: -3vmin 0 0 -3vmin;
   }
 
   .pages img {

@@ -360,7 +360,7 @@ p {
 .pages {
   display: flex;
   position: absolute;
-  bottom: -87px;
+  bottom: 15px;
 }
 
 .navbook {

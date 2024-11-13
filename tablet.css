@@ -183,44 +183,6 @@
     bottom: 0px;
     margin-top: 12.125rem;
   }
-
-  .pages {
-    bottom: -39px;
-  }
-
-  .main {
-    width: 12.114rem;
-  }
-
-  .milestones {
-    width: 13.278rem;
-  }
-
-  .gallery {
-    width: 11.516rem;
-  }
-
-  .my-granny {
-    width: 13.278rem;
-  }
-
-  .remember {
-    width: 13.734rem;
-  }
-
-  .map {
-    width: 12.788rem;
-  }
-
-  .nanas-words {
-    width: 11.288rem;
-  }
-}
-
-@media only screen and (orientation: landscape) and (max-width: 1120px) {
-  .pages {
-    bottom: -6.5vmax !important;
-  }
 }
 
 @media only screen and (max-width: 1120px) {
@@ -375,49 +337,5 @@
     margin-left: -22.375rem;
     top: -7rem;
     left: 2rem;
-  }
-
-  .navbook {
-    width: 80vw;
-  }
-
-  .pages {
-    bottom: -4.5vmin;
-  }
-
-  .main {
-    margin: -3vmin 0 0 5vmin;
-  }
-
-  .milestones {
-    margin: 1vmin 0 0 -3vmin;
-  }
-
-  .gallery {
-    margin: -4vmin 0 0 -6vmin;
-  }
-
-  .my-granny {
-    margin: 1vmin 0 0 -3vmin;
-  }
-
-  .remember {
-    margin: -4vmin 0 0 -6vmin;
-  }
-
-  .map {
-    margin: 1.5vmin 0 0 -4vmin;
-  }
-
-  .nanas-words {
-    margin: -3vmin 0 0 -3vmin;
-  }
-
-  .pages img {
-    width: 12vw;
-  }
-
-  .pages img:hover {
-    width: 12vw;
   }
 }
