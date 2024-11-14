@@ -179,7 +179,7 @@
   .language-selector {
     width: 79px;
     right: 60px;
-    margin-right: 1vmin;
+    margin-right: 0px;
   }
 
   .hero-container {
