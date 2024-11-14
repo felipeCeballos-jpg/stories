@@ -117,7 +117,7 @@ function changeLanguage(language, isMobile = false) {
 
 function checkImagesLoaded(callback, loaderElement, delayLoadingPage = false) {
   console.log('Check images loaded');
-  const maxLoadingTime = 3000; // 3 seconds
+  const maxLoadingTime = 2500; // 2.5 seconds
   const checkInterval = 100; // Interval time in ms
   const startTime = Date.now();
 
