@@ -35,7 +35,7 @@ body {
   overflow: hidden;
 }
 
-body .loader img {
+body .loader video {
   height: 16rem;
   width: 16rem;
 }

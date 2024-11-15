@@ -66,6 +66,7 @@ export const RUMobileText = [
 ];
 
 export const ruLang = [
+  './assets/header_ru.webp',
   './assets/navbook/main_ru.webp',
   './assets/navbook/milestones_ru.webp',
   './assets/navbook/gallery_ru.webp',
@@ -76,6 +77,7 @@ export const ruLang = [
 ];
 
 export const enLang = [
+  './assets/header_en.webp',
   './assets/navbook/main_en.webp',
   './assets/navbook/milestones_en.webp',
   './assets/navbook/gallery_en.webp',
