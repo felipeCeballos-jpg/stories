@@ -40,6 +40,11 @@ body .loader img {
   width: 16rem;
 }
 
+body .loader video {
+  height: 16rem;
+  width: 16rem;
+}
+
 main {
   display: flex;
   flex-direction: column;
