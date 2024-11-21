@@ -1,7 +1,17 @@
 @media only screen and (min-width: 801px) and (max-width: 1366px) {
+  .nd-main {
+    background-image: url('./assets/bg-tetradka.webp');
+    background-size: 100dvh 100dvh;
+    background-size: 100% 100%;
+  }
+
   .stories-section {
     max-width: 90rem;
     width: 100%;
+  }
+
+  .nd-stories-section {
+    width: 90rem;
   }
 
   .hero-container {
@@ -14,8 +24,41 @@
     height: 11rem;
   }
 
+  .nd-hero-img {
+    width: 31.813rem;
+    height: 5.139rem;
+  }
+
+  .nd-language-container {
+    /* max-width: 71rem; */
+    max-width: 76rem;
+  }
   .language-selector {
     margin-right: 0rem;
+  }
+
+  .pencil-stroke-container {
+    width: 4.938rem;
+    height: 8.188rem;
+    /* bottom: 7rem;
+    right: 3rem; */
+    /*  margin-left: 72rem;
+    margin-top: 20rem; */
+    margin-left: 79rem;
+    margin-top: 19rem;
+  }
+
+  .plane-one-contaniner {
+    width: 21.563rem;
+    height: 20.75rem;
+    /* bottom: 2rem;
+    left: -5rem; */
+    /* margin-top: -21rem;
+    margin-left: -3rem; */
+    margin-top: -21rem;
+    margin-left: 0rem;
+    /*  left: -5rem; */
+    left: 3rem;
   }
 
   .razdelitel-hero-container {
@@ -49,6 +92,10 @@
 
   .vegetable-base-section {
     margin-bottom: 5rem;
+  }
+
+  .nd-vegetable-base-section {
+    margin-bottom: 6.4rem;
   }
 
   .german-subsection,
@@ -155,6 +202,64 @@
     margin-right: 0.875rem;
   }
 
+  .plane-two-container {
+    width: 66.688rem;
+    height: 16.188rem;
+    /* top: -14rem;
+    left: 0rem; */
+    margin-top: -14rem;
+    /* margin-left: 12rem; */
+    margin-left: 0rem;
+    margin-right: -16rem;
+  }
+
+  .dog-footprints-container {
+    width: 6.563rem;
+    height: 17.625rem;
+    /* right: -13px;
+    top: 0px; */
+    right: 75px;
+    top: -116px;
+  }
+
+  .pen-container {
+    width: 11.5rem;
+    height: 31.938rem;
+    left: -2rem;
+    top: -10rem;
+    transform: translateX(-1.5rem);
+  }
+
+  .stars-container {
+    width: 44.438rem;
+    height: 39.75rem;
+    top: -7rem;
+    /* right: -5rem; */
+    right: -2rem;
+  }
+
+  .train-container {
+    width: 28.688rem;
+    height: 6.375rem;
+    top: 1.3rem;
+    left: 9.5rem;
+  }
+
+  .ovni-container {
+    width: 17.438rem;
+    height: 6.938rem;
+    top: -5.9rem;
+    right: 2rem;
+  }
+
+  .smoke-container {
+    width: 56rem;
+    height: 27.288rem;
+    bottom: -14.3rem;
+    margin-left: -24rem;
+    /*  left: -7rem; */
+  }
+
   .razdelitel-wolf-container {
     width: 26.074rem;
     height: 23.688rem;
@@ -183,6 +288,19 @@
     bottom: 0px;
     margin-top: 12.125rem;
   }
+
+  .scroll-active-left {
+    animation: 1s linear 0s forwards slideLeft;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-1.5rem);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @media only screen and (max-width: 1120px) {
@@ -193,6 +311,24 @@
   .hero-img {
     width: 29.9rem;
     height: 10.339rem;
+  }
+
+  .nd-hero-img {
+    width: 29.9rem;
+    height: 4.831rem;
+  }
+
+  .pencil-stroke-container {
+    width: 3.5rem;
+    height: 5.804rem;
+    margin-left: 58rem;
+  }
+
+  .plane-one-contaniner {
+    width: 15rem;
+    height: 14.435rem;
+    left: -2.2rem;
+    margin-top: -15.5rem;
   }
 
   .razdelitel-hero-container {
@@ -229,9 +365,14 @@
     margin-bottom: 3rem;
   }
 
+  .nd-vegetable-base-section {
+    margin-bottom: 3.9rem;
+  }
+
   .subsection {
     width: 100%;
     grid-template-columns: 1fr minmax(auto, 25rem);
+    left: 0rem;
   }
 
   .stories-section .subsection {
@@ -313,6 +454,63 @@
     height: 20.356rem;
   }
 
+  .plane-two-container {
+    width: 47rem;
+    height: 11.409rem;
+    margin-right: 0rem;
+    margin-top: 0rem;
+    top: -10rem;
+    left: 10rem;
+  }
+
+  .pen-container {
+    left: -6rem;
+    width: 9rem;
+    top: -11rem;
+    margin-left: -3rem;
+    transform: translateX(-2.5rem);
+  }
+
+  .dog-footprints-container {
+    width: 5rem;
+    height: 13.429rem;
+    top: -90px;
+    right: 0rem;
+    left: 59rem;
+  }
+
+  .stars-container {
+    width: 28rem;
+    height: 25.046rem;
+    top: -4rem;
+    left: 37rem;
+    right: 0rem;
+  }
+
+  .train-container {
+    width: 22rem;
+    height: 4.889rem;
+    left: 1rem;
+  }
+
+  .ovni-container {
+    width: 12rem;
+    height: 4.774rem;
+    left: 41rem;
+    right: 0rem;
+    top: -5rem;
+  }
+
+  .smoke-container {
+    width: clamp(35rem, 63%, 43rem);
+    height: 100%;
+    /*  bottom: -10.2rem; */
+    bottom: -10rem;
+    margin-left: 0rem;
+    /* left: 0rem; */
+    left: -2rem;
+  }
+
   .razdelitel-wolf-container {
     width: 20.375rem;
     height: 18.511rem;
@@ -337,5 +535,18 @@
     margin-left: -22.375rem;
     top: -7rem;
     left: 2rem;
+  }
+
+  .scroll-active-left {
+    animation: 1s linear 0s forwards slideLeft;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-2.5rem);
+  }
+  to {
+    transform: translateX(0);
   }
 }

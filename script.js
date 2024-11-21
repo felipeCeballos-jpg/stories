@@ -5,17 +5,19 @@ import {
   RUMobileText,
   enLang,
   ruLang,
+  nd_enLang,
+  nd_ruLang,
 } from './index.js';
 
 const switchLanguageButton = document.getElementById('language-selector');
 const localizedText = {
   russian: {
-    mobile: { texts: RUMobileText, images: ruLang },
-    default: { texts: RUText, images: ruLang },
+    mobile: { texts: RUMobileText, images: nd_ruLang },
+    default: { texts: RUText, images: nd_ruLang },
   },
   english: {
-    mobile: { texts: ENMobileText, images: enLang },
-    default: { texts: EnText, images: enLang },
+    mobile: { texts: ENMobileText, images: nd_enLang },
+    default: { texts: EnText, images: nd_enLang },
   },
 };
 // Set media queries
@@ -38,6 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const language = switchLanguageButton.dataset.language;
 
   changeLanguage(language, mqlMobile.matches);
+  sideElementsAnimation();
   booksAnimation();
 });
 
@@ -47,6 +50,7 @@ switchLanguageButton.addEventListener('click', () => {
   loader.style.display = 'flex';
 
   const currentAssets = changeLanguage(currentLanguage, mqlMobile.matches);
+  sideElementsAnimation();
   booksAnimation();
 
   checkImagesLoaded(currentAssets.imagesLoaded, loader, true);
@@ -57,6 +61,7 @@ mqlMobile.addEventListener('change', (event) => {
   if (!event.matches) return;
   loader.style.display = 'flex';
 
+  sideElementsAnimation();
   booksAnimation();
   const currentAssets = changeLanguage(
     switchLanguageButton.dataset.language,
@@ -70,6 +75,7 @@ mqlDefault.addEventListener('change', (event) => {
   if (!event.matches) return;
   loader.style.display = 'flex';
 
+  sideElementsAnimation();
   booksAnimation();
   const currentAssets = changeLanguage(
     switchLanguageButton.dataset.language,
@@ -97,8 +103,8 @@ function changeLanguage(language, isMobile = false) {
   // Update Language Image
   languageElement.src =
     language === 'russian'
-      ? './assets/klubok_en.png'
-      : './assets/klubok_ru.png';
+      ? './assets/klubok-engs.webp'
+      : './assets/klubok-rus.webp';
 
   // Update Footer Images
   imageElements.forEach((image, index) => {
@@ -164,6 +170,39 @@ function booksAnimation() {
   booksObserver.observe(footer);
 }
 
+function sideElementsAnimation() {
+  resetAnimation([
+    { selector: '.scroll-action-left', animationClass: 'scroll-active-left' },
+  ]);
+
+  const elementsToAnimate = [{ selector: '.scroll-action-left', side: 'left' }];
+
+  elementsToAnimate.forEach(({ selector, side }) => {
+    document.querySelectorAll(selector).forEach((item) => {
+      initScrollAnimationObserver(item, side);
+    });
+  });
+}
+
+function initScrollAnimationObserver(item, side) {
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(`scroll-active-${side}`);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      rootMargin: '0px',
+      threshold: 0, // trigger when 0% of the element is visible
+    }
+  );
+
+  observer.observe(item);
+}
+
 function resetAnimation(elements) {
   if (elements.length === 0) return;
 
@@ -173,4 +212,30 @@ function resetAnimation(elements) {
       element.classList.remove(animationClass);
     }
   });
+}
+
+/* New Design  */
+/* 
+function changeDesign() {
+  const newDesign = getRandomBoolean();
+  const newTexts = document.querySelectorAll('.changeable-txt');
+
+  if (newDesign) {
+    newTexts.forEach((txt) => {
+      if (txt.classList.contains('nd-txt')) {
+        txt.classList.remove('nd-txt');
+      }
+    });
+  } else {
+    newTexts.forEach((txt) => {
+      if (!txt.classList.contains('nd-txt')) {
+        txt.classList.add('nd-txt');
+      }
+    });
+  }
+} */
+
+function getRandomBoolean() {
+  /*   return Math.random() < 0.5; */
+  return Math.random() < 0.2;
 }

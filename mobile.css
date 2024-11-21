@@ -14,8 +14,25 @@
     margin-bottom: 19vmax !important;
   }
 
+  .nd-hero-container {
+    margin-top: 15vmax !important;
+    margin-bottom: 23vmax !important;
+  }
+
   .hero-img {
     width: 77vmax !important;
+  }
+
+  .pencil-stroke-container {
+    width: 7vmax;
+    margin-left: 4vmax;
+    margin-top: 0vmax;
+  }
+
+  .plane-one-contaniner {
+    margin-top: -28vmax;
+    margin-left: 6vmax;
+    width: 31vmax;
   }
 
   .razdelitel-hero-container {
@@ -135,6 +152,42 @@
     width: 98vmax !important;
   }
 
+  .plane-two-container {
+    margin-top: -241vmax;
+    margin-left: 93vmax;
+    width: 100vmax;
+  }
+
+  .pen-container {
+    width: 22vmax;
+    top: -6vmax;
+    left: -7vmax;
+  }
+
+  .dog-footprints-container {
+    width: 18vmax;
+    right: -6vmax;
+    top: 73vmax;
+  }
+
+  .stars-container {
+    width: 90vmax;
+    top: -16vmax;
+    right: -40vmax;
+  }
+
+  .train-container {
+    width: 50vmax;
+    top: 1vmax;
+    left: 62vmax;
+  }
+
+  .ovni-container {
+    width: 32vmax;
+    top: 98vmax;
+    right: -4vmax;
+  }
+
   .razdelitel-german-container,
   .razdelitel-wolf-container,
   .razdelitel-peats-container,
@@ -188,9 +241,28 @@
     margin-bottom: 19vmin;
   }
 
+  .nd-hero-container {
+    margin-top: 15vmin;
+    margin-bottom: 23vmin;
+  }
+
   .hero-img {
     width: 77vmin;
     height: 100%;
+  }
+
+  .pencil-stroke-container {
+    height: 25%;
+    width: 7vmin;
+    margin-left: 4vmin;
+    margin-top: 0vmin;
+  }
+
+  .plane-one-contaniner {
+    margin-top: -28vmin;
+    margin-left: -6vmin;
+    width: 31vmin;
+    height: 50%;
   }
 
   .razdelitel-hero-container {
@@ -218,6 +290,10 @@
   .brilliant-green-section {
     flex-direction: column;
     align-items: center;
+  }
+
+  .subsection {
+    left: 0px;
   }
 
   .german-subsection,
@@ -358,8 +434,57 @@
     width: 98vmin;
   }
 
-  .razdelitel-german-container,
+  .plane-two-container {
+    margin-top: -241vmin;
+    margin-left: 93vmin;
+    width: 100vmin;
+    height: 15%;
+  }
+
+  .pen-container {
+    width: 22vmin;
+    height: 30%;
+    top: -6vmin;
+    left: -7vmin;
+    transform: translateX(-40%);
+  }
+
+  .dog-footprints-container {
+    width: 18vmin;
+    height: 23%;
+    right: -6vmin;
+    top: 73vmin;
+  }
+
+  .stars-container {
+    width: 90vmin;
+    height: 42%;
+    top: -16vmin;
+    right: -40vmin;
+  }
+
+  .train-container {
+    width: 50vmin;
+    height: 10%;
+    top: 1vmin;
+    left: 62vmin;
+    transform: scaleX(-1);
+  }
+
+  .ovni-container {
+    width: 32vmin;
+    height: 10%;
+    top: 98vmin;
+    right: -4vmin;
+  }
+
+  .smoke-container {
+    display: none;
+  }
+
+  .nd-razdelitel-wolf-container,
   .razdelitel-peats-container,
+  .nd-razdelitel-groom-container,
   .razdelitel-kremlin-container,
   .razdelitel-vegetablebase-container {
     display: block;
@@ -430,5 +555,14 @@
 
   .pages img:hover {
     width: 18vmin;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-40%);
+  }
+  to {
+    transform: translateX(0);
   }
 }

@@ -86,3 +86,24 @@ export const enLang = [
   './assets/navbook/map_en.webp',
   './assets/navbook/nanas_words_en.webp',
 ];
+
+export const nd_enLang = [
+  './assets/header-eng-trafaret.webp',
+  './assets/navbook/main_en.webp',
+  './assets/navbook/milestones_en.webp',
+  './assets/navbook/gallery_en.webp',
+  './assets/navbook/my_granny_en.webp',
+  './assets/navbook/remember_en.webp',
+  './assets/navbook/map_en.webp',
+  './assets/navbook/nanas_words_en.webp',
+];
+export const nd_ruLang = [
+  './assets/header-ru-trafaret.webp',
+  './assets/navbook/main_ru.webp',
+  './assets/navbook/milestones_ru.webp',
+  './assets/navbook/gallery_ru.webp',
+  './assets/navbook/my_granny_ru.webp',
+  './assets/navbook/remember_ru.webp',
+  './assets/navbook/map_ru.webp',
+  './assets/navbook/nanas_words_ru.webp',
+];
