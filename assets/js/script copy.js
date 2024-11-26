@@ -3,21 +3,39 @@ import {
   RUText,
   ENMobileText,
   RUMobileText,
-  enLang,
-  ruLang,
-  nd_enLang,
-  nd_ruLang,
-} from './index.js';
+  ndImages,
+  originalImages,
+  multipleClasses,
+  uniqueClasses,
+  footerRuTranslateImgs,
+  footerEnTranslateImgs,
+  ndRuTranslateImgs,
+  originalRuTranslateImgs,
+  ndEnTranslateImgs,
+  originalEnTranslateImgs,
+} from './constant.js';
 
 const switchLanguageButton = document.getElementById('language-selector');
+const html = document.querySelector('html');
 const localizedText = {
   russian: {
-    mobile: { texts: RUMobileText, images: nd_ruLang },
-    default: { texts: RUText, images: nd_ruLang },
+    mobile: { texts: RUMobileText },
+    default: { texts: RUText },
   },
   english: {
-    mobile: { texts: ENMobileText, images: nd_enLang },
-    default: { texts: EnText, images: nd_enLang },
+    mobile: { texts: ENMobileText },
+    default: { texts: EnText },
+  },
+};
+
+const localizedImages = {
+  russian: {
+    'new-design': { images: ndRuTranslateImgs },
+    'original-design': { images: originalRuTranslateImgs },
+  },
+  english: {
+    'new-design': { images: ndEnTranslateImgs },
+    'original-design': { images: originalEnTranslateImgs },
   },
 };
 // Set media queries
@@ -38,8 +56,10 @@ window.addEventListener('load', () => {
 
 window.addEventListener('DOMContentLoaded', () => {
   const language = switchLanguageButton.dataset.language;
+  changeDesign();
 
-  changeLanguage(language, mqlMobile.matches);
+  const newDesign = html.dataset.design;
+  changeLanguage(newDesign, language, mqlMobile.matches);
   sideElementsAnimation();
   booksAnimation();
 });
@@ -47,13 +67,19 @@ window.addEventListener('DOMContentLoaded', () => {
 switchLanguageButton.addEventListener('click', () => {
   const currentLanguage =
     switchLanguageButton.dataset.language === 'russian' ? 'english' : 'russian';
+  const newDesign = html.dataset.design;
   loader.style.display = 'flex';
 
-  const currentAssets = changeLanguage(currentLanguage, mqlMobile.matches);
+  console.log({ newDesignButton: newDesign });
+  const currentAssets = changeLanguage(
+    newDesign,
+    currentLanguage,
+    mqlMobile.matches
+  );
   sideElementsAnimation();
   booksAnimation();
 
-  checkImagesLoaded(currentAssets.imagesLoaded, loader, true);
+  checkImagesLoaded(currentAssets.imagesLoaded, loader);
   switchLanguageButton.dataset.language = currentLanguage;
 });
 
@@ -63,7 +89,9 @@ mqlMobile.addEventListener('change', (event) => {
 
   sideElementsAnimation();
   booksAnimation();
+  const newDesign = html.dataset.design;
   const currentAssets = changeLanguage(
+    newDesign,
     switchLanguageButton.dataset.language,
     event.matches
   );
@@ -77,7 +105,9 @@ mqlDefault.addEventListener('change', (event) => {
 
   sideElementsAnimation();
   booksAnimation();
+  const newDesign = html.dataset.design;
   const currentAssets = changeLanguage(
+    newDesign,
     switchLanguageButton.dataset.language,
     false
   );
@@ -86,29 +116,76 @@ mqlDefault.addEventListener('change', (event) => {
 });
 
 /* ChangeLanguage */
-function changeLanguage(language, isMobile = false) {
-  const languageElement = document.querySelector('#language-selector');
-  const imageElements = document.querySelectorAll('.changeable-img');
+function changeLanguage(dataDesign, language, isMobile = false) {
   const textElements = document.querySelectorAll('.changeable-txt');
   const deviceType = isMobile ? 'mobile' : 'default';
   const currentResource = localizedText[language][deviceType];
-  let imagesLoaded = 0;
-  const totalImages = imageElements.length;
 
   // Update Text
   textElements.forEach((text, index) => {
     text.innerHTML = currentResource.texts[index];
   });
 
-  // Update Language Image
-  languageElement.src =
-    language === 'russian'
-      ? './assets/klubok-engs.webp'
-      : './assets/klubok-rus.webp';
+  console.log(dataDesign);
+
+  let { imagesLoaded, totalImages } = updateImages(dataDesign, language);
+  console.log({ imagesLoaded });
+  console.log({ totalImages });
+
+  return {
+    imagesLoaded: () => imagesLoaded === totalImages,
+  };
+}
+
+function updateImages(hasNewDesign, language) {
+  // Selector
+  const changeableTranslateImages =
+    document.querySelectorAll('.changeable-img');
+  const changeableNDImages = document.querySelectorAll('.changeable-nd-img');
+  const changeableFooterImages = document.querySelectorAll(
+    '.changeable-footer-img'
+  );
+
+  // Assing Images
+  const currentTranslateImages = localizedImages[language][hasNewDesign];
+  const currentDesignImages =
+    hasNewDesign === 'new-design' ? ndImages : originalImages;
+  let currentFooterImages =
+    language === 'russian' ? footerRuTranslateImgs : footerEnTranslateImgs;
+
+  console.log({ currentTranslateImages });
+  console.log({ currentDesignImages });
+  console.log({ currentFooterImages });
+
+  const totalImages =
+    changeableTranslateImages.length +
+    changeableNDImages.length +
+    changeableFooterImages.length;
+  let imagesLoaded = 0;
 
   // Update Footer Images
-  imageElements.forEach((image, index) => {
-    image.src = currentResource.images[index];
+  changeableFooterImages.forEach((image, index) => {
+    image.src = currentFooterImages[index];
+    image.onload = () => imagesLoaded++;
+    image.onerror = () => {
+      imagesLoaded++;
+      console.log('Error loading image: ', image.src);
+    };
+  });
+
+  // Update ND Images
+  changeableNDImages.forEach((image, index) => {
+    image.src = currentDesignImages[index];
+    image.onload = () => imagesLoaded++;
+    image.onerror = () => {
+      imagesLoaded++;
+      console.log('Error loading image: ', image.src);
+    };
+  });
+
+  // Update Language Image
+  changeableTranslateImages.forEach((image, index) => {
+    image.src = currentTranslateImages.images[index];
     image.onload = () => imagesLoaded++;
     image.onerror = () => {
       imagesLoaded++;
@@ -117,7 +194,8 @@ function changeLanguage(language, isMobile = false) {
   });
 
   return {
-    imagesLoaded: () => imagesLoaded === totalImages,
+    imagesLoaded,
+    totalImages,
   };
 }
 
@@ -128,7 +206,9 @@ function checkImagesLoaded(callback, loaderElement, delayLoadingPage = false) {
   const startTime = Date.now();
 
   const checkLoadStatus = setInterval(() => {
+    console.log('Interval');
     if (callback()) {
+      console.log('waht');
       const elapsedTime = Date.now() - startTime;
       console.log({ elapsedTime });
       const timeRemaining = maxLoadingTime - elapsedTime;
@@ -215,25 +295,54 @@ function resetAnimation(elements) {
 }
 
 /* New Design  */
-/* 
-function changeDesign() {
-  const newDesign = getRandomBoolean();
-  const newTexts = document.querySelectorAll('.changeable-txt');
 
-  if (newDesign) {
-    newTexts.forEach((txt) => {
-      if (txt.classList.contains('nd-txt')) {
-        txt.classList.remove('nd-txt');
-      }
+function changeDesign() {
+  const hasNewDesign = getRandomBoolean();
+  const elementNDClasses = new Map();
+
+  initialize(multipleClasses, uniqueClasses, elementNDClasses);
+
+  elementNDClasses.forEach((data, element) => {
+    const { ndClasses } = data;
+
+    if (hasNewDesign) {
+      // Add all nd classes for this element
+      html.setAttribute('data-design', 'new-design');
+      ndClasses.forEach((className) => element.classList.add(className));
+    } else {
+      // Remove all nd classes for this element
+      html.setAttribute('data-design', 'original-design');
+      ndClasses.forEach((className) => element.classList.remove(className));
+    }
+  });
+}
+
+function initialize(multipleClasses, uniqueClasses, elementNDClasses) {
+  // Clear any existing mappings
+  elementNDClasses.clear();
+
+  Object.entries(uniqueClasses).forEach(([baseSelector, ndClasses]) => {
+    const element = document.querySelector(baseSelector);
+
+    if (element) {
+      elementNDClasses.set(element, {
+        ndClasses: ndClasses,
+        baseSelector: baseSelector,
+      });
+    }
+  });
+
+  Object.entries(multipleClasses).forEach(([baseSelector, ndClasses]) => {
+    const elements = document.querySelectorAll(baseSelector);
+
+    elements.forEach((element) => {
+      elementNDClasses.set(element, {
+        ndClasses: ndClasses,
+        baseSelector: baseSelector,
+      });
     });
-  } else {
-    newTexts.forEach((txt) => {
-      if (!txt.classList.contains('nd-txt')) {
-        txt.classList.add('nd-txt');
-      }
-    });
-  }
-} */
+  });
+}
 
 function getRandomBoolean() {
   /*   return Math.random() < 0.5; */

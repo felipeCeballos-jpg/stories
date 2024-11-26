@@ -220,6 +220,10 @@
     padding: 0px 16px;
   }
 
+  .nd-main {
+    background-position: 9% center;
+  }
+
   p {
     margin-top: 0rem;
   }
@@ -480,6 +484,10 @@
 
   .smoke-container {
     display: none;
+  }
+
+  html[data-design='original'] .razdelitel-german-container {
+    display: block;
   }
 
   .nd-razdelitel-wolf-container,

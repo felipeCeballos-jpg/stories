@@ -65,8 +65,7 @@ export const RUMobileText = [
   `Каждый раз, когда Ольга Егоровна приезжала во Власово, она превращалась в "зелёный десант", и занималась профилактикой столбняка. <p class="txtSpacing">Любимым лекарством была зелёнка.</p> <p class="txtSpacing">После её приезда все, от внука, покусанного комарами, племянника с цыпками и до кошек, с царапинами после драк, ходили с точками от зелёнки.</p> <p class="txtSpacing">Вот такая заботливая она была.</p>`,
 ];
 
-export const ruLang = [
-  './assets/header_ru.webp',
+export const footerRuTranslateImgs = [
   './assets/navbook/main_ru.webp',
   './assets/navbook/milestones_ru.webp',
   './assets/navbook/gallery_ru.webp',
@@ -76,34 +75,77 @@ export const ruLang = [
   './assets/navbook/nanas_words_ru.webp',
 ];
 
-export const enLang = [
+export const footerEnTranslateImgs = [
+  './assets/navbook/main_en.webp',
+  './assets/navbook/milestones_en.webp',
+  './assets/navbook/gallery_en.webp',
+  './assets/navbook/my_granny_en.webp',
+  './assets/navbook/remember_en.webp',
+  './assets/navbook/map_en.webp',
+  './assets/navbook/nanas_words_en.webp',
+];
+
+export const originalEnTranslateImgs = [
+  './assets/klubok_en.png',
   './assets/header_en.webp',
-  './assets/navbook/main_en.webp',
-  './assets/navbook/milestones_en.webp',
-  './assets/navbook/gallery_en.webp',
-  './assets/navbook/my_granny_en.webp',
-  './assets/navbook/remember_en.webp',
-  './assets/navbook/map_en.webp',
-  './assets/navbook/nanas_words_en.webp',
+];
+export const ndEnTranslateImgs = [
+  './assets/klubok-engs.webp',
+  './assets/header-eng-trafaret.webp',
 ];
 
-export const nd_enLang = [
-  './assets/header-eng-trafaret.webp',
-  './assets/navbook/main_en.webp',
-  './assets/navbook/milestones_en.webp',
-  './assets/navbook/gallery_en.webp',
-  './assets/navbook/my_granny_en.webp',
-  './assets/navbook/remember_en.webp',
-  './assets/navbook/map_en.webp',
-  './assets/navbook/nanas_words_en.webp',
+export const originalRuTranslateImgs = [
+  './assets/klubok_ru.png',
+  './assets/header_ru.webp',
 ];
-export const nd_ruLang = [
+export const ndRuTranslateImgs = [
+  './assets/klubok-rus.webp',
   './assets/header-ru-trafaret.webp',
-  './assets/navbook/main_ru.webp',
-  './assets/navbook/milestones_ru.webp',
-  './assets/navbook/gallery_ru.webp',
-  './assets/navbook/my_granny_ru.webp',
-  './assets/navbook/remember_ru.webp',
-  './assets/navbook/map_ru.webp',
-  './assets/navbook/nanas_words_ru.webp',
 ];
+
+export const ndImages = [
+  './assets/new-german-illustration.webp',
+  './assets/new-wolves-illustration.webp',
+  './assets/new-peats-illustration.webp',
+  './assets/new-groom-illustration.webp',
+  './assets/new-kremlin-illustration.webp',
+  './assets/new-vegetables-illustration.webp',
+  './assets/new-zelenka-art.webp',
+];
+
+export const originalImages = [
+  './assets/german-illustration.webp',
+  './assets/wolves-illustration.webp',
+  './assets/peats-illustration.webp',
+  './assets/groom-illustration.webp',
+  './assets/kremlin-illustration.webp',
+  './assets/vegetables-illustration.webp',
+  './assets/zelenka-art.webp',
+];
+
+export const repeatingClasses = {
+  '.stories-section': ['nd-stories-section'],
+  '.changeable-txt': ['nd-txt'],
+  '.decorated-img': ['nd-decorated-img'],
+};
+
+export const uniqueClasses = {
+  main: ['nd-main'],
+  '.language-container': ['nd-language-container'],
+  '.language-selector.klubok': ['nd-language-selector', 'nd-klubok'],
+  '.hero-container': ['nd-hero-container'],
+  '.hero-img': ['nd-hero-img'],
+  '.razdelitel-hero-container': ['nd-razdelitel-hero-container'],
+  '.german-section': ['nd-german-section'],
+  '.ger-img': ['nd-ger-img'],
+  '.ger-text': ['nd-ger-text'],
+  '.wolf-text': ['nd-wolf-text'],
+  '.razdelitel-wolf-container': ['nd-razdelitel-wolf-container'],
+  '.razdelitel-groom-container': ['nd-razdelitel-groom-container'],
+  '.vegetable-base-section': ['nd-vegetable-base-section'],
+  '.razdelitel-vegetablebase-container': [
+    'nd-razdelitel-vegetablebase-container',
+  ],
+  '.brillgn-text': ['nd-brillgn-text'],
+  '.razdelitel-brillgn-container': ['nd-razdelitel-brillgn-container'],
+};

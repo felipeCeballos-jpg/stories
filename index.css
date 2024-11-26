@@ -98,6 +98,12 @@ main {
   height: 10.917rem;
 }
 
+html[data-design='new'] {
+  .language-container[data-language='english'] .nd-hero-img-en {
+    width: 28.5rem;
+  }
+}
+
 .nd-hero-img {
   width: 38.688rem;
   height: 100%;
@@ -137,6 +143,7 @@ main {
 }
 
 .pencil-stroke-container {
+  display: none;
   position: absolute;
   width: 6.125rem;
   height: 10.188rem;
@@ -156,6 +163,7 @@ main {
 }
 
 .plane-one-contaniner {
+  display: none;
   position: absolute;
   width: 24rem;
   height: 23.096rem;
@@ -377,6 +385,7 @@ p {
 }
 
 .plane-two-container {
+  display: none;
   position: absolute;
   width: 76rem;
   height: 18.448rem;
@@ -396,6 +405,7 @@ p {
 }
 
 .dog-footprints-container {
+  display: none;
   position: absolute;
   width: 6.563rem;
   height: 17.625rem;
@@ -413,6 +423,7 @@ p {
 }
 
 .pen-container {
+  display: none;
   position: absolute;
   width: 11.5rem;
   height: 31.938rem;
@@ -431,6 +442,7 @@ p {
 }
 
 .stars-container {
+  display: none;
   position: absolute;
   width: 44.438rem;
   height: 39.75rem;
@@ -448,6 +460,7 @@ p {
 }
 
 .train-container {
+  display: none;
   position: absolute;
   width: 28.688rem;
   height: 6.375rem;
@@ -465,6 +478,7 @@ p {
 }
 
 .ovni-container {
+  display: none;
   position: absolute;
   width: 17.438rem;
   height: 6.938rem;
@@ -482,6 +496,7 @@ p {
 }
 
 .smoke-container {
+  display: none;
   position: absolute;
   width: 68.75rem;
   height: 33.5rem;
@@ -652,6 +667,10 @@ p {
 
 .scroll-active-left {
   animation: 1s linear 0s forwards slideLeft;
+}
+
+.nd-decorated-img {
+  display: block;
 }
 
 @keyframes slideLeft {
