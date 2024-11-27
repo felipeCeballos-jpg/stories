@@ -33,16 +33,18 @@ console.time('Loading time');
 
 window.addEventListener('load', () => {
   console.timeEnd('Loading time');
+  loader.style.display = 'none';
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  changeDesignElements(html);
+
   const language = html.lang;
   const hasNewDesign = html.dataset.design;
   changeLanguage(hasNewDesign, language, mqlMobile.matches).then((result) => {
     checkImagesLoaded(result.timestamp, loader, true);
   });
-});
 
-window.addEventListener('DOMContentLoaded', () => {
-  changeDesignElements(html);
-  const hasNewDesign = html.dataset.design;
   booksAnimation();
 
   if (hasNewDesign === 'new') {
