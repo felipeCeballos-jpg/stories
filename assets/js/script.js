@@ -43,7 +43,7 @@ window.addEventListener('load', () => {
     return;
   }
 
-  loaderElement.style.display = 'none';
+  loader.style.display = 'none';
 });
 
 window.addEventListener('DOMContentLoaded', () => {
