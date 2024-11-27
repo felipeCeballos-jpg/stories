@@ -82,3 +82,21 @@ export function resetAnimation(elements) {
     }
   });
 }
+
+// Image loading utility that returns a promise and handles errors
+export const loadImage = (image, src) => {
+  return new Promise((resolve) => {
+    if (!src) {
+      console.warn(`Missing source for image: `, image);
+      resolve(false);
+      return;
+    }
+
+    image.src = src;
+    image.onload = () => resolve(true);
+    image.onerror = (error) => {
+      console.error('Error loading image: ', { src, error });
+      resolve(false);
+    };
+  });
+};

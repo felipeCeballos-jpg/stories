@@ -24,6 +24,11 @@
     height: 11rem;
   }
 
+  html[data-design='new']:lang(en) .hero-img {
+    width: 23.583rem;
+    height: 100%;
+  }
+
   .nd-hero-img {
     width: 31.813rem;
     height: 100%;
@@ -312,6 +317,11 @@
   .hero-img {
     width: 29.9rem;
     height: 10.339rem;
+  }
+
+  html[data-design='new']:lang(en) .nd-hero-img {
+    width: 22.216rem;
+    height: 100%;
   }
 
   .nd-hero-img {

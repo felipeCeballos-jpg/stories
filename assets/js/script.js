@@ -9,11 +9,11 @@ import {
 const switchLanguageButton = document.getElementById('language-selector');
 const html = document.querySelector('html');
 const localizedText = {
-  russian: {
+  ru: {
     mobile: { texts: RUMobileText },
     default: { texts: RUText },
   },
-  english: {
+  en: {
     mobile: { texts: ENMobileText },
     default: { texts: EnText },
   },
@@ -27,20 +27,22 @@ const mqlDefault = window.matchMedia('(min-width: 801px)');
 const loader = document.querySelector('.loader');
 
 // Set Language
-switchLanguageButton.dataset.language = 'russian';
+html.lang = 'ru';
 
 console.time('Loading time');
+
 window.addEventListener('load', () => {
   console.timeEnd('Loading time');
-  loader.style.display = 'none';
+  const language = html.lang;
+  const hasNewDesign = html.dataset.design;
+  changeLanguage(hasNewDesign, language, mqlMobile.matches).then((result) => {
+    checkImagesLoaded(result.timestamp, loader, true);
+  });
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  const language = switchLanguageButton.dataset.language;
   changeDesignElements(html);
-
   const hasNewDesign = html.dataset.design;
-  changeLanguage(hasNewDesign, language, mqlMobile.matches);
   booksAnimation();
 
   if (hasNewDesign === 'new') {
@@ -49,22 +51,19 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 switchLanguageButton.addEventListener('click', () => {
-  const currentLanguage =
-    switchLanguageButton.dataset.language === 'russian' ? 'english' : 'russian';
+  const currentLang = html.lang === 'ru' ? 'en' : 'ru';
   const newDesign = html.dataset.design;
   loader.style.display = 'flex';
   const hasNewDesign = html.getAttribute('data-design') === 'new';
 
-  changeLanguage(newDesign, currentLanguage, mqlMobile.matches).then(
-    (result) => {
-      checkImagesLoaded(result.timestamp, loader, true);
-    }
-  );
+  changeLanguage(newDesign, currentLang, mqlMobile.matches).then((result) => {
+    checkImagesLoaded(result.timestamp, loader, true);
+  });
 
   if (hasNewDesign) sideElementsAnimation();
 
   booksAnimation();
-  switchLanguageButton.dataset.language = currentLanguage;
+  html.lang = currentLang;
 });
 
 mqlMobile.addEventListener('change', (event) => {
@@ -76,7 +75,7 @@ mqlMobile.addEventListener('change', (event) => {
 
   booksAnimation();
 
-  updateText(event.matches, switchLanguageButton.dataset.language);
+  updateText(event.matches, html.lang);
   loader.style.display = 'none';
 });
 
@@ -86,7 +85,7 @@ mqlDefault.addEventListener('change', (event) => {
   loader.style.display = 'flex';
 
   booksAnimation();
-  updateText(false, switchLanguageButton.dataset.language);
+  updateText(false, html.lang);
 
   if (hasNewDesign) sideElementsAnimation();
 
@@ -97,6 +96,7 @@ mqlDefault.addEventListener('change', (event) => {
 async function changeLanguage(dataDesign, language, isMobile = false) {
   try {
     updateText(isMobile, language);
+
     const result = await updateImages(dataDesign, language);
 
     if (!result.success) {

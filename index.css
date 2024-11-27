@@ -20,6 +20,10 @@ body {
   font-family: 'MADE Likes Slab';
 }
 
+html[data-design='new'] body {
+  background-color: #fde4c3;
+}
+
 .loader {
   position: fixed;
   top: 0;
@@ -33,6 +37,10 @@ body {
   align-items: center;
   z-index: 9999;
   overflow: hidden;
+}
+
+.nd-loader {
+  background-color: #fde4c3;
 }
 
 body .loader img {
@@ -98,10 +106,9 @@ main {
   height: 10.917rem;
 }
 
-html[data-design='new'] {
-  .language-container[data-language='english'] .nd-hero-img-en {
-    width: 28.5rem;
-  }
+html[data-design='new']:lang(en) .nd-hero-img {
+  width: 28.5rem;
+  height: 100%;
 }
 
 .nd-hero-img {

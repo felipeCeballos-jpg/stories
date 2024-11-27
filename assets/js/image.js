@@ -9,12 +9,14 @@ import {
   originalImages,
 } from './constant.js';
 
+import { loadImage } from './util.js';
+
 const LOCALIZEDIMAGES = {
-  russian: {
+  ru: {
     new: { images: ndRuTranslateImgs },
     original: { images: originalRuTranslateImgs },
   },
-  english: {
+  en: {
     new: { images: ndEnTranslateImgs },
     original: { images: originalEnTranslateImgs },
   },
@@ -27,30 +29,11 @@ const IMAGE_SELECTORS = {
   footer: '.changeable-footer-img',
 };
 
-// Image loading utility that returns a promise and handles errors
-const loadImage = (image, src) => {
-  return new Promise((resolve) => {
-    if (!src) {
-      console.warn(`Missing source for image: `, image);
-      resolve(false);
-      return;
-    }
-
-    image.src = src;
-    image.onload = () => resolve(true);
-    image.onerror = (error) => {
-      console.error('Error loading image: ', { src, error });
-      resolve(false);
-    };
-  });
-};
-
 // Image source resolver
 const getImageSources = (hasNewDesign, language) => ({
   translate: LOCALIZEDIMAGES[language]?.[hasNewDesign]?.images || [],
   design: hasNewDesign === 'new' ? ndImages : originalImages,
-  footer:
-    language === 'russian' ? footerRuTranslateImgs : footerEnTranslateImgs,
+  footer: language === 'ru' ? footerRuTranslateImgs : footerEnTranslateImgs,
 });
 
 export async function updateImages(hasNewDesign, language) {
@@ -77,10 +60,11 @@ export async function updateImages(hasNewDesign, language) {
 
       // Prepare image loading promises
       elements[key].forEach((image, index) => {
-        const src =
+        /* const src =
           key === 'translate'
             ? imageSources[key]?.[index]
-            : imageSources[key]?.[index];
+            : imageSources[key]?.[index]; */
+        const src = imageSources[key]?.[index];
 
         loadingPromises.push(
           loadImage(image, src).then((success) => {
@@ -94,7 +78,6 @@ export async function updateImages(hasNewDesign, language) {
     // Load all images concurrently
     await Promise.allSettled(loadingPromises);
 
-    // Return results
     return {
       imagesLoaded,
       totalImages,

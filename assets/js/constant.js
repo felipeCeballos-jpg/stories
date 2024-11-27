@@ -130,6 +130,7 @@ export const repeatingClasses = {
 };
 
 export const uniqueClasses = {
+  '.loader': ['nd-loader'],
   main: ['nd-main'],
   '.language-container': ['nd-language-container'],
   '.language-selector.klubok': ['nd-language-selector', 'nd-klubok'],
