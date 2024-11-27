@@ -29,11 +29,21 @@ const loader = document.querySelector('.loader');
 // Set Language
 html.lang = 'ru';
 
-console.time('Loading time');
-
+const startLoadingTime = Date.now();
 window.addEventListener('load', () => {
-  console.timeEnd('Loading time');
-  loader.style.display = 'none';
+  const maxLoadingTime = 2500; // 2.5 seconds
+  const elapsedLoadingTime = Date.now() - startLoadingTime;
+  const timeRemaining = maxLoadingTime - elapsedLoadingTime;
+
+  if (elapsedLoadingTime < maxLoadingTime) {
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, timeRemaining);
+
+    return;
+  }
+
+  loaderElement.style.display = 'none';
 });
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -41,9 +51,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const language = html.lang;
   const hasNewDesign = html.dataset.design;
-  changeLanguage(hasNewDesign, language, mqlMobile.matches).then((result) => {
-    checkImagesLoaded(result.timestamp, loader, true);
-  });
+  changeLanguage(hasNewDesign, language, mqlMobile.matches);
 
   booksAnimation();
 
