@@ -20,6 +20,13 @@ const LOCALIZEDIMAGES = {
   },
 };
 
+// Configuration object for image selectors
+const IMAGE_SELECTORS = {
+  translate: '.changeable-img',
+  design: '.changeable-nd-img',
+  footer: '.changeable-footer-img',
+};
+
 // Image loading utility that returns a promise and handles errors
 const loadImage = (image, src) => {
   return new Promise((resolve) => {
@@ -36,13 +43,6 @@ const loadImage = (image, src) => {
       resolve(false);
     };
   });
-};
-
-// Configuration object for image selectors
-const IMAGE_SELECTORS = {
-  translate: '.changeable-img',
-  design: '.changeable-nd-img',
-  footer: '.changeable-footer-img',
 };
 
 // Image source resolver
