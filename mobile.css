@@ -23,11 +23,11 @@
     width: 77vmax !important;
   }
 
-  .nd-hero-img {
+  .hero-container .nd-hero-img {
     width: 77vmax !important;
   }
 
-  html[data-design='new']:lang(en) .nd-hero-img {
+  html[data-design='new']:lang(en) .nd-hero-container .nd-hero-img {
     width: 50vmax !important;
   }
 
@@ -282,8 +282,8 @@
   }
 
   html[data-design='new']:lang(en) .nd-hero-img {
-    width: 50vmin;
-    height: 100%;
+    width: 50vmin !important;
+    height: auto;
   }
 
   .pencil-stroke-container {
