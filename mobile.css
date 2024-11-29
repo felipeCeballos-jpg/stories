@@ -23,6 +23,10 @@
     width: 77vmax !important;
   }
 
+  .nd-hero-img {
+    width: 77vmax !important;
+  }
+
   html[data-design='new']:lang(en) .nd-hero-img {
     width: 50vmax !important;
   }
@@ -84,6 +88,7 @@
   }
 
   .ger-text,
+  .wolf-text,
   .peat-text,
   .kremlin-text {
     margin-top: 6.924vmax !important;
@@ -271,6 +276,11 @@
     height: 100%;
   }
 
+  .nd-hero-img {
+    width: 77vmin !important;
+    height: auto;
+  }
+
   html[data-design='new']:lang(en) .nd-hero-img {
     width: 50vmin;
     height: 100%;
@@ -374,6 +384,7 @@
   }
 
   .ger-text,
+  .wolf-text,
   .peat-text,
   .kremlin-text {
     margin-top: 6.924vmin;
