@@ -242,7 +242,8 @@
   }
 
   .nd-main {
-    background-position: 9% center;
+    background-image: url('./assets/bg-tetradka.webp');
+    background-position: 6.2% center;
   }
 
   p {
