@@ -1,10 +1,6 @@
 import { EnText, RUText, ENMobileText, RUMobileText } from './constant.js';
 import { updateImages } from './image.js';
-import {
-  changeDesignElements,
-  checkImagesLoaded,
-  resetAnimation,
-} from './util.js';
+import { changeDesignElements, checkLoaded, resetAnimation } from './util.js';
 
 const switchLanguageButton = document.getElementById('language-selector');
 const html = document.querySelector('html');
@@ -31,7 +27,7 @@ html.lang = 'ru';
 
 const startLoadingTime = Date.now();
 window.addEventListener('load', () => {
-  const maxLoadingTime = 2500; // 2.5 seconds
+  /*  const maxLoadingTime = 2500; // 2.5 seconds
   const elapsedLoadingTime = Date.now() - startLoadingTime;
   const timeRemaining = maxLoadingTime - elapsedLoadingTime;
 
@@ -43,7 +39,8 @@ window.addEventListener('load', () => {
     return;
   }
 
-  loader.style.display = 'none';
+  loader.style.display = 'none'; */
+  checkLoaded(startLoadingTime, loader, true);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -67,7 +64,7 @@ switchLanguageButton.addEventListener('click', () => {
   const hasNewDesign = html.getAttribute('data-design') === 'new';
 
   changeLanguage(newDesign, currentLang, mqlMobile.matches).then((result) => {
-    checkImagesLoaded(result.timestamp, loader, true);
+    checkLoaded(result.timestamp, loader, true);
   });
 
   if (hasNewDesign) sideElementsAnimation();

@@ -53,7 +53,7 @@ function getRandomBoolean() {
   /* return Math.random() < 0.2; */
 }
 
-export function checkImagesLoaded(
+export function checkLoaded(
   startTime,
   loaderElement,
   delayLoadingPage = false
