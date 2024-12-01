@@ -108,13 +108,12 @@ main {
 
 html[data-design='new']:lang(en) .nd-hero-img {
   width: 28.5rem;
-  height: 100%;
+  height: 6.438rem;
 }
 
 .nd-hero-img {
   width: 38.688rem;
-  height: 100%;
-  /*  height: 6.25rem; */
+  height: 6.25rem;
 }
 
 .language-container {
