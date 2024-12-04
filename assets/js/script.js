@@ -1,6 +1,13 @@
 import { EnText, RUText, ENMobileText, RUMobileText } from './constant.js';
 import { updateImages } from './image.js';
-import { changeDesignElements, checkLoaded, resetAnimation } from './util.js';
+import {
+  changeDesignElements,
+  checkLoaded,
+  initLanguage,
+  resetAnimation,
+  getLanguage,
+  setLanguage,
+} from './util.js';
 
 const switchLanguageButton = document.getElementById('language-selector');
 const html = document.querySelector('html');
@@ -23,32 +30,19 @@ const mqlDefault = window.matchMedia('(min-width: 801px)');
 const loader = document.querySelector('.loader');
 
 // Set Language
-html.lang = 'ru';
+/* html.lang = 'ru'; */
+initLanguage(html);
 
 const startLoadingTime = Date.now();
 window.addEventListener('load', () => {
-  /*  const maxLoadingTime = 2500; // 2.5 seconds
-  const elapsedLoadingTime = Date.now() - startLoadingTime;
-  const timeRemaining = maxLoadingTime - elapsedLoadingTime;
-
-  if (elapsedLoadingTime < maxLoadingTime) {
-    setTimeout(() => {
-      loader.style.display = 'none';
-    }, timeRemaining);
-
-    return;
-  }
-
-  loader.style.display = 'none'; */
   checkLoaded(startLoadingTime, loader, true);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
   changeDesignElements(html);
 
-  const language = html.lang;
   const hasNewDesign = html.dataset.design;
-  changeLanguage(hasNewDesign, language, mqlMobile.matches);
+  updateDesign(hasNewDesign, mqlMobile.matches);
 
   booksAnimation();
 
@@ -58,53 +52,59 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 switchLanguageButton.addEventListener('click', () => {
-  const currentLang = html.lang === 'ru' ? 'en' : 'ru';
-  const newDesign = html.dataset.design;
   loader.style.display = 'flex';
+
+  // Change language
+  setLanguage(html);
+
+  const newDesign = html.dataset.design;
   const hasNewDesign = html.getAttribute('data-design') === 'new';
 
-  changeLanguage(newDesign, currentLang, mqlMobile.matches).then((result) => {
+  updateDesign(newDesign, mqlMobile.matches).then((result) => {
     checkLoaded(result.timestamp, loader, true);
   });
 
   if (hasNewDesign) sideElementsAnimation();
 
   booksAnimation();
-  html.lang = currentLang;
 });
 
 mqlMobile.addEventListener('change', (event) => {
   if (!event.matches) return;
-  const hasNewDesign = html.getAttribute('data-design') === 'new';
   loader.style.display = 'flex';
 
+  const hasNewDesign = html.getAttribute('data-design') === 'new';
+  const currentLanguage = getLanguage();
   if (hasNewDesign) sideElementsAnimation();
 
   booksAnimation();
 
-  updateText(event.matches, html.lang);
+  updateText(event.matches, currentLanguage);
   loader.style.display = 'none';
 });
 
 mqlDefault.addEventListener('change', (event) => {
   if (!event.matches) return;
-  const hasNewDesign = html.getAttribute('data-design') === 'new';
   loader.style.display = 'flex';
 
-  booksAnimation();
-  updateText(false, html.lang);
-
+  const hasNewDesign = html.getAttribute('data-design') === 'new';
+  const currentLanguage = getLanguage();
   if (hasNewDesign) sideElementsAnimation();
 
+  booksAnimation();
+
+  updateText(false, currentLanguage);
   loader.style.display = 'none';
 });
 
-/* ChangeLanguage */
-async function changeLanguage(dataDesign, language, isMobile = false) {
+/* Update Design */
+async function updateDesign(dataDesign, isMobile = false) {
   try {
-    updateText(isMobile, language);
+    // Get current languages
+    console.log({ updateLanguage: currentLanguage });
+    updateText(isMobile, currentLanguage);
 
-    const result = await updateImages(dataDesign, language);
+    const result = await updateImages(dataDesign, currentLanguage);
 
     if (!result.success) {
       console.warn(

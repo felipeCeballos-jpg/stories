@@ -151,3 +151,5 @@ export const uniqueClasses = {
   '.brillgn-text': ['nd-brillgn-text'],
   '.razdelitel-brillgn-container': ['nd-razdelitel-brillgn-container'],
 };
+
+export const INITIAL_LANGUAGE = 'ru';
