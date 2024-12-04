@@ -100,8 +100,8 @@ mqlDefault.addEventListener('change', (event) => {
 /* Update Design */
 async function updateDesign(dataDesign, isMobile = false) {
   try {
-    // Get current languages
-    console.log({ updateLanguage: currentLanguage });
+    // Get current language
+    const currentLanguage = getLanguage();
     updateText(isMobile, currentLanguage);
 
     const result = await updateImages(dataDesign, currentLanguage);
