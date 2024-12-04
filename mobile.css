@@ -88,10 +88,13 @@
   }
 
   .ger-text,
-  .wolf-text,
   .peat-text,
   .kremlin-text {
     margin-top: 6.924vmax !important;
+  }
+
+  .wolf-text {
+    margin-top: 5vmax !important;
   }
 
   .ger-text {
@@ -385,10 +388,13 @@
   }
 
   .ger-text,
-  .wolf-text,
   .peat-text,
   .kremlin-text {
     margin-top: 6.924vmin;
+  }
+
+  .wolf-text {
+    margin-top: 5vmin;
   }
 
   .ger-text {
