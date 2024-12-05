@@ -87,20 +87,20 @@ export const footerEnTranslateImgs = [
 ];
 
 export const originalEnTranslateImgs = [
-  './assets/klubok_en.png',
+  './assets/klubok_ru.png',
   './assets/header_en.webp',
 ];
 export const ndEnTranslateImgs = [
-  './assets/klubok-engs.webp',
+  './assets/klubok-rus.webp',
   './assets/header-eng-trafaret.webp',
 ];
 
 export const originalRuTranslateImgs = [
-  './assets/klubok_ru.png',
+  './assets/klubok_en.png',
   './assets/header_ru.webp',
 ];
 export const ndRuTranslateImgs = [
-  './assets/klubok-rus.webp',
+  './assets/klubok-engs.webp',
   './assets/header-ru-trafaret.webp',
 ];
 
