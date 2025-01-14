@@ -113,8 +113,7 @@
   .brilliant-green-subsection {
     /*  grid-template-columns: 1fr minmax(auto, 31.4rem); */
     /* grid-template-columns: 1fr minmax(28.063rem, 31.4rem); */
-    /* grid-template-columns: 1fr minmax(auto, 28.063rem); */
-    grid-template-columns: 1fr minmax(auto, 28.625rem);
+    grid-template-columns: 1fr minmax(auto, 28.063rem);
     max-width: 71rem;
     gap: 1.25rem;
   }
@@ -173,14 +172,17 @@
   }
 
   .wolf-img {
-    width: 33.58rem;
+    /*  width: 33.58rem; */
+    width: 36.146rem;
     height: 30.2rem;
     margin-left: -1.938rem;
   }
 
   .peat-img {
     width: 45.194rem;
-    height: 26.813rem;
+    /* height: 26.813rem; */
+    /*  height: 29.972rem; */
+    height: 29.772rem;
     margin-top: 0rem;
     margin-left: -0.875rem;
   }
