@@ -116,7 +116,7 @@ export const ndImages = [
 
 export const originalImages = [
   './assets/german-illustration.webp',
-  './assets/wolves-illustration.webp',
+  './assets/wolves-illustration copy 2.webp',
   './assets/peats-illustration.webp',
   './assets/groom-illustration.webp',
   './assets/kremlin-illustration.webp',
