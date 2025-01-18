@@ -449,7 +449,12 @@
 
   .peat-img {
     width: 35.228rem;
-    height: 20.9rem;
+    /* height: 20.9rem; */
+    height: 22.011rem;
+  }
+
+  .nd-peat-img {
+    height: 23.403rem;
   }
 
   .groom-img {
