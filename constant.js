@@ -142,6 +142,7 @@ export const uniqueClasses = {
   '.ger-img': ['nd-ger-img'],
   '.ger-text': ['nd-ger-text'],
   '.wolf-text': ['nd-wolf-text'],
+  '.peat-img': ['nd-peat-img'],
   '.razdelitel-wolf-container': ['nd-razdelitel-wolf-container'],
   '.razdelitel-groom-container': ['nd-razdelitel-groom-container'],
   '.vegetable-base-section': ['nd-vegetable-base-section'],
