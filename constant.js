@@ -106,8 +106,8 @@ export const ndRuTranslateImgs = [
 
 export const ndImages = [
   './assets/new-german-illustration.webp',
-  './assets/new-wolves-illustration.webp',
-  './assets/new-peats-illustration.webp',
+  './assets/new-wolves-illustration copy.webp',
+  './assets/new-peats-illustration copy.webp',
   './assets/new-groom-illustration.webp',
   './assets/new-kremlin-illustration.webp',
   './assets/new-vegetables-illustration.webp',
@@ -116,8 +116,8 @@ export const ndImages = [
 
 export const originalImages = [
   './assets/german-illustration.webp',
-  './assets/wolves-illustration copy 2.webp',
-  './assets/peats-illustration.webp',
+  './assets/wolves-illustration copy 3.webp',
+  './assets/peats-illustration copy.webp',
   './assets/groom-illustration.webp',
   './assets/kremlin-illustration.webp',
   './assets/vegetables-illustration.webp',
