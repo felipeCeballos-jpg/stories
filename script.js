@@ -9,7 +9,7 @@ import {
   setLanguage,
 } from './util.js';
 
-const switchLanguageButton = document.getElementById('language-selector');
+const switchLanguageButton = document.querySelector('.language-button');
 const html = document.querySelector('html');
 const localizedText = {
   ru: {

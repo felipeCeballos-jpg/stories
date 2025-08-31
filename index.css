@@ -130,18 +130,22 @@ html[data-design='new']:lang(en) .nd-hero-img {
   margin-bottom: 17.813rem;
 }
 
-.language-selector {
+.language-button {
+  border: none;
+  background-color: transparent;
   position: relative;
-  /*  width: 4.696rem;
-  height: 1.688rem; */
-  width: 6.813rem;
   align-self: flex-end;
   margin-right: 5rem;
   margin-bottom: 0;
   cursor: pointer;
-  transition: none;
-  pointer-events: auto !important;
   z-index: 2;
+}
+
+.language-selector {
+  /*  width: 4.696rem;
+  height: 1.688rem; */
+  width: 6.813rem;
+  transition: none;
 }
 
 .nd-language-selector {

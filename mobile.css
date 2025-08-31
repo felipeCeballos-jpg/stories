@@ -3,10 +3,13 @@
     margin-top: 2vmax !important;
   }
 
+  .language-button {
+    margin-right: 3vmax !important;
+  }
+
   .language-selector {
     width: 12vmax !important;
     height: 5vmax !important;
-    margin-right: 3vmax !important;
   }
 
   .hero-container {
@@ -258,10 +261,13 @@
     margin-top: 2vmin;
   }
 
+  .language-button {
+     margin-right: 3vmin !important;
+  }
+
   .language-selector {
     width: 79px;
     right: 60px;
-    margin-right: 0px;
   }
 
   .hero-container {
